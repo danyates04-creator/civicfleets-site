@@ -1,0 +1,310 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Civic Fleet Services | Fleet Consulting</title>
+<meta name="description" content="Civic Fleet Services: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
+<meta property="og:title" content="Civic Fleet Services | Fleet Consulting">
+<meta property="og:description" content="Fleet maintenance software and consulting for city and public fleets, from a Fleet Manager who came up as a Mechanic.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Civic Fleet Services">
+<style>
+:root{--ink:#0d1620;--ink2:#16283a;--amber:#ffb627;--red:#e8443a;--sky:#4fb3ff;--paper:#f4f6f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+.w{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:1.1rem 0}
+nav .w{display:flex;justify-content:space-between;align-items:center}
+.brand{color:#fff;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:1rem}
+.brand b{color:var(--amber)}
+nav a.mini{color:#fff;text-decoration:none;border:1px solid #ffffff55;padding:.4rem .9rem;border-radius:99px;font-size:.9rem}
+.hero{position:relative;overflow:hidden;color:#fff;min-height:min(88vh,760px);display:flex;align-items:center;
+background:radial-gradient(1200px 500px at 85% -10%,#2b5d8a 0%,transparent 60%),radial-gradient(800px 400px at 0% 110%,#7a2a1f 0%,transparent 60%),linear-gradient(160deg,#0d1620 0%,#132536 55%,#0a121a 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 38px,#ffffff06 38px 40px)}
+.hero .w{position:relative;z-index:2;padding-top:6rem;padding-bottom:7rem}
+.kicker{display:inline-block;background:#ffb62722;color:var(--amber);border:1px solid #ffb62766;padding:.3rem .8rem;border-radius:99px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(2.3rem,6.5vw,4.6rem);line-height:1.03;margin:1rem 0;font-weight:900;letter-spacing:-.02em;max-width:14ch}
+h1 span{background:linear-gradient(90deg,var(--amber),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(1.05rem,2vw,1.3rem);max-width:40ch;color:#d5e0ea}
+.cta{display:inline-flex;gap:.6rem;align-items:center;margin-top:1.6rem;background:linear-gradient(90deg,var(--amber),#ff8a1f);color:#1a1000;font-weight:800;padding:1rem 1.6rem;border-radius:10px;text-decoration:none;box-shadow:0 10px 30px #ff9a1f55;transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px #ff9a1f77}
+.ghost{margin-left:1rem;color:#fff;font-weight:600}
+.strip{background:var(--ink);color:#fff;padding:2.2rem 0;border-top:4px solid var(--amber)}
+.strip .w{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.stat .n{font-size:2.3rem;font-weight:900;color:var(--amber);line-height:1}
+.stat .l{color:#b9c7d4;font-size:.95rem}
+.stat.focus .n{color:var(--sky);font-size:1.5rem;line-height:1.2}
+.label{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#a3b4c4}
+section{padding:5rem 0}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:.3rem 0 1rem;font-weight:900;letter-spacing:-.01em}
+.eyebrow{color:#b3261e;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+.cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:2rem}
+.card{background:#fff;border-radius:16px;padding:1.6rem;box-shadow:0 2px 0 #0001,0 12px 30px #0d16200f;position:relative;overflow:hidden;transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--amber),var(--red))}
+.ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--ink);margin-bottom:.8rem}
+.card h3{margin:.2rem 0 .4rem;font-size:1.25rem}.card p{margin:0;color:#43515f}
+.story{background:linear-gradient(135deg,#fff,#e9eef4)}
+.story .w{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.path{list-style:none;padding:0;margin:0;border-left:3px solid var(--amber)}
+.path li{padding:.2rem 0 1.2rem 1.4rem;position:relative}
+.path li:before{content:"";position:absolute;left:-9px;top:.55rem;width:15px;height:15px;border-radius:50%;background:var(--ink);border:3px solid var(--amber)}
+.path b{display:block}
+.contact{background:radial-gradient(700px 300px at 80% 0%,#2b5d8a,transparent 70%),var(--ink);color:#fff;text-align:center}
+.contact p{color:#c9d6e2;max-width:46ch;margin:0 auto 1.2rem}
+.mail{display:inline-block;font-size:clamp(1.1rem,3.4vw,1.8rem);font-weight:800;color:var(--amber);text-decoration:none;border-bottom:2px solid #ffb62766;margin-top:.6rem;word-break:break-all}
+footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-size:.85rem}
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media (max-width:600px){.ghost{display:block;margin:1rem 0 0}.hero .w{padding-bottom:6rem}}
+.show{background:#0d1620;color:#fff}.show h2{color:#fff}.show .sub{color:#b9c7d4;max-width:60ch}
+.demo-note{display:inline-block;margin-top:.4rem;font-size:.8rem;color:#a3b4c4;border:1px dashed #a3b4c4;border-radius:6px;padding:.2rem .6rem}
+.feat{display:grid;gap:1.6rem;grid-template-columns:1.25fr 1fr;align-items:center;margin-top:3rem}
+.feat.flip .shot{order:2}.shot{display:flex;gap:.8rem;justify-content:center}
+.shot img{max-width:100%;height:auto;border-radius:12px;box-shadow:0 20px 50px #0008;border:1px solid #ffffff22;background:#fff}
+.shot{flex-wrap:wrap}.shot.phone img.wide{max-width:100%;border-radius:12px;border:1px solid #ffffff22}.shot.phone img{max-width:260px;border-radius:22px;border:6px solid #223447}
+.feat h3{font-size:1.5rem;margin:.2rem 0 .5rem;color:var(--amber)}.feat p{color:#d5e0ea;margin:.4rem 0}
+.vs{font-size:.92rem;color:#9fb2c4;border-left:3px solid var(--red);padding-left:.8rem}
+@media (max-width:800px){.feat{grid-template-columns:1fr}.feat.flip .shot{order:0}.shot.phone img{max-width:46%}.shot.phone img.wide{max-width:100%}}
+
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--amber),var(--red));z-index:20}
+
+.caps{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin:2rem 0}
+.cap{background:#132536;border:1px solid #ffffff14;border-radius:14px;padding:1rem 1.2rem;transition:border-color .25s,transform .25s}
+.cap:hover{border-color:var(--amber);transform:translateY(-3px)}.cap b{display:block;font-size:1.6rem;color:var(--amber);line-height:1.1}.cap span{color:#b9c7d4;font-size:.92rem}
+.tour{background:#0a121a;border:1px solid #ffffff14;border-radius:18px;padding:1rem;box-shadow:0 30px 80px #0009}
+.tabs{display:flex;gap:.4rem;overflow-x:auto;padding-bottom:.6rem;scrollbar-width:none}
+.tabs button{flex:0 0 auto;font:inherit;font-size:.92rem;font-weight:700;color:#b9c7d4;background:#132536;border:1px solid #ffffff14;border-radius:99px;padding:.5rem 1rem;cursor:pointer;transition:background .2s,color .2s}
+.tabs button:hover{color:#fff}.tabs button[aria-selected=true]{background:var(--amber);color:#1a1000;border-color:var(--amber)}
+.pane{display:none;grid-template-columns:1.5fr 1fr;gap:1.6rem;align-items:center;padding:.8rem}
+.pane.on{display:grid;animation:pin .5s ease}
+@keyframes pin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.pshot{display:flex;gap:.8rem;justify-content:center;align-items:flex-start}
+.pshot img{max-width:100%;height:auto;border-radius:12px;border:1px solid #ffffff22;background:#fff;box-shadow:0 20px 50px #0008;transition:transform .4s}
+.pshot img:hover{transform:scale(1.02)}
+.pshot img.ph{max-width:260px;border-radius:22px;border:6px solid #223447}.pshot.duo img{min-width:0}.pshot.duo img.ph{max-width:38%}.pshot.duo img:not(.ph){max-width:58%}
+.ptxt h3{font-size:1.5rem;margin:.2rem 0 .6rem;color:var(--amber)}
+.ptxt ul{list-style:none;padding:0;margin:0 0 1rem}.ptxt li{padding:.35rem 0 .35rem 1.6rem;position:relative;color:#d5e0ea}
+.ptxt li:before{content:"";position:absolute;left:0;top:.8rem;width:10px;height:10px;border-radius:3px;background:var(--amber);transform:rotate(45deg)}
+.tnav{display:flex;align-items:center;justify-content:center;gap:1rem;padding-top:.4rem}
+.arr{font:inherit;font-size:1.2rem;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff33;background:#132536;color:#fff;cursor:pointer;transition:background .2s}.arr:hover{background:var(--amber);color:#1a1000}
+.dots{display:flex;gap:.4rem}.dots i{width:8px;height:8px;border-radius:99px;background:#ffffff33;transition:width .3s,background .3s}.dots i.on{width:24px;background:var(--amber)}
+.calc{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:center;margin-top:3rem;background:linear-gradient(135deg,#132536,#0a121a);border:1px solid #ffffff14;border-radius:18px;padding:1.8rem}
+.calc h3{font-size:1.5rem;margin:.2rem 0 .4rem}.calc label{display:block;margin:.9rem 0 0;font-size:.92rem;color:#d5e0ea}
+.calc output{float:right;color:var(--amber);font-weight:700}.calc input{width:100%;accent-color:var(--amber);margin-top:.3rem}
+.gauge{position:relative;text-align:center;max-width:320px;margin:0 auto;width:100%}.gauge svg{width:100%}#arc{transition:stroke-dasharray .4s ease}
+.gnum{position:absolute;left:0;right:0;top:38%;font-size:3.4rem;font-weight:900;line-height:1}.gtag{font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-top:-.4rem}
+.card .ico{transition:transform .3s}.card:hover .ico{transform:rotate(-8deg) scale(1.08)}.card:hover{box-shadow:0 2px 0 #0001,0 20px 40px #0d16201f}
+
+@media (max-width:800px){.pane,.calc{grid-template-columns:1fr}.pshot img.ph{max-width:60%}.calc{padding:1.2rem}}
+@media (prefers-reduced-motion:reduce){.path li{opacity:1}.scan{display:none}}
+
+.wm{margin-bottom:1.4rem;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
+.wm1{display:inline-block;position:relative;max-width:100%;white-space:nowrap;font-size:min(6rem,calc((100vw - 2.5rem) / 11.2));color:#fff;animation:wmIn .3s ease both}
+.wm2{color:#fff}
+.wm1:after{content:"";position:absolute;left:0;bottom:-.08em;height:.07em;width:100%;background:linear-gradient(90deg,var(--amber),var(--red));transform-origin:0 50%;animation:bar .8s .7s ease both}
+@keyframes wmIn{from{opacity:0}to{opacity:1}}
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+h1.tag{font-size:clamp(1.6rem,3.6vw,2.6rem);max-width:none}
+.stat .n{font-size:2.6rem}
+.show h2.big{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05}.show h2.big span{background:linear-gradient(90deg,var(--amber),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.subline{font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:700;color:#fff;margin:.2rem 0 .6rem}
+
+
+button.ghost{background:none;border:0;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.demo-cta{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;justify-content:space-between;margin:2rem 0 0;padding:1.2rem 1.4rem;border-radius:16px;background:linear-gradient(90deg,#ffb62722,#e8443a22);border:1px solid #ffb62766}
+.demo-cta b{display:block;font-size:1.3rem}.demo-cta span{color:#d5e0ea}.demo-cta .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
+dialog#demo{border:0;border-radius:18px;padding:1.8rem;width:min(440px,92vw);background:#0d1620;color:#fff;box-shadow:0 30px 80px #000c}
+dialog#demo::backdrop{background:#05090dcc}
+#demo h3{margin:0 0 .3rem;font-size:1.5rem;color:var(--amber)}#demo p{color:#c9d6e2;margin:.2rem 0 1rem}
+#demo label{display:block;margin:.7rem 0;font-size:.92rem;font-weight:600}#demo label span{color:#a3b4c4;font-weight:400}
+#demo input{display:block;width:100%;margin-top:.3rem;padding:.7rem .8rem;border-radius:10px;border:1px solid #ffffff33;background:#132536;color:#fff;font:inherit}
+#demo input:focus{outline:2px solid var(--amber);border-color:transparent}
+#demo .cta{border:0;font:inherit;font-weight:800;cursor:pointer;margin-top:.6rem;width:100%;justify-content:center}
+#demo .x{position:absolute;top:.6rem;right:.8rem;background:none;border:0;color:#9fb2c4;font-size:1.8rem;cursor:pointer}
+#demo .err{color:#ff8a80;min-height:1.2em;margin:.2rem 0;font-size:.9rem}
+
+.hero{min-height:auto}.hero .w{padding-top:5.5rem;padding-bottom:4rem}
+.hgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center}
+h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem;max-width:22ch}
+.ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.4rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
+.ctas.center{justify-content:center}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.hshot{margin:0}.hshot img{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#fff;display:block}
+.hshot figcaption{font-size:.8rem;color:#a3b4c4;margin-top:.5rem;text-align:right}
+.also{margin-top:1.2rem;color:#43515f}
+.ctarow{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between;margin:2rem 0 0;padding:1.3rem 1.5rem;border-radius:16px;background:#132536;border:1px solid #ffb62766}
+.ctarow b{display:block;font-size:1.3rem}.ctarow span{color:#d5e0ea}.ctarow .ctas{margin:0}
+.pgrid{display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;align-items:center;margin-top:1.6rem}
+.steps{list-style:none;counter-reset:s;padding:0;margin:0}.steps li{counter-increment:s;position:relative;padding:0 0 1.3rem 3.2rem;color:#43515f}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--ink);color:var(--amber);font-weight:900;display:grid;place-items:center}
+.steps b{display:block;color:var(--ink);font-size:1.1rem}
+.phones{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}.phones img{width:44%;max-width:230px;height:auto;border-radius:22px;border:6px solid #223447;box-shadow:0 20px 40px #0d162033}
+.cap2{width:100%;text-align:center;font-size:.85rem;color:#43515f;margin:.2rem 0 0}
+.itp{background:linear-gradient(135deg,#fff,#e9eef4)}.six{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.price{margin-top:2rem;font-size:1.15rem;text-align:center}
+@media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="prog" aria-hidden="true"></div>
+<nav><div class="w"><div class="brand" data-name>Civic Fleet Services</div><a class="mini" href="#contact">Contact</a></div></nav>
+
+<header class="hero"><div class="w">
+<div class="wm" aria-label="Civic Fleet Services"><span class="wm1">Civic Fleet <span class="wm2">Services</span></span></div>
+<div class="hgrid"><div>
+<h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
+<p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
+<div class="ctas"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="#contact">Talk to Dan</a></div>
+</div>
+<figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
+</div></div>
+</header>
+
+<div class="strip"><div class="w">
+ <div class="stat reveal"><div class="n">2,000+</div><div class="l">units managed at once</div></div>
+ <div class="stat reveal"><div class="n">20+</div><div class="l">years in fleet maintenance</div></div>
+ <div class="stat reveal"><div class="n">3</div><div class="l">fleet types: city, fire and commuter rail</div></div>
+</div></div>
+
+<section id="services"><div class="w">
+<div class="eyebrow reveal">Services</div><h2 class="reveal">Built for the shop floor and the council room.</h2>
+<div class="cards">
+ <div class="card reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb627" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><h3>City and public fleets</h3><p>Streets, utilities, parks, police and fire: fleet know-how from a Fleet Manager who has run them.</p></div>
+ <div class="card reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb627" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div><h3>PM that actually happens</h3><p>Preventive maintenance programs and schedules your techs can run and your units can live with.</p></div>
+ <div class="card reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb627" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h3>Replacement and budget plans</h3><p>Data-backed replacement scoring and budgets by class and year that hold up in front of a council.</p></div>
+ <div class="card reveal"><div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffb627" stroke-width="2"><path d="M12 2c2 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 3 3 3 0z"/></svg></div><h3>Fire apparatus</h3><p>Part of the public fleet: maintenance priorities for emergency equipment, where readiness isn't optional.</p></div>
+</div>
+<p class="also">Also available for private and commercial fleets.</p></div></div></section>
+
+<section class="story"><div class="w">
+<div class="reveal"><div class="eyebrow">Background</div><h2>From the shop floor to Fleet Manager.</h2>
+<p>Dan came up as a Mechanic and moved into leading maintenance teams. He has served as a Fleet Manager for city and fire department fleets and supervised commuter rail vehicle maintenance. That background means advice that respects both the budget and the bay.</p></div>
+<ul class="path reveal">
+ <li><b>Came up as a Mechanic</b>Hands-on maintenance roots</li>
+ <li><b>Commuter rail maintenance supervisor</b>Rail vehicle maintenance leadership</li>
+ <li><b>Fleet Manager, city &amp; fire fleets</b>Municipal and public-safety fleet leadership</li>
+ <li><b>Today: <span data-name>Civic Fleet Services</span></b>Fleet software and consulting for city and public fleets</li>
+</ul></div></section>
+
+<section class="show" id="fmis"><div class="w">
+<div class="eyebrow reveal" style="color:var(--amber)">Fleet management software</div>
+<h2 class="reveal big">No two fleets run the same.<br><span>Your fleet software shouldn&rsquo;t either.</span></h2>
+<p class="subline reveal">Custom software for your fleet, built by a Fleet Manager.</p>
+<p class="sub reveal">Take the tour. Every screen below is from a working demo. <span class="demo-note">Sample data: fictional "Demo Valley, UT" fleet</span></p>
+<div class="caps reveal">
+ <div class="cap"><b>0&ndash;100</b><span>replacement score per unit</span></div>
+ <div class="cap"><b>Class &amp; year</b><span>budget roll-ups with inflation</span></div>
+ <div class="cap"><b>Miles + days</b><span>PM intervals, next due, status</span></div>
+ <div class="cap"><b>Defect &rarr; WO</b><span>safety defect opens a WO right away</span></div>
+</div>
+<div class="tour reveal">
+ <div class="tabs" role="tablist" aria-label="FMIS tour">
+  <button role="tab" aria-selected="true">Dashboard</button>
+  <button role="tab" aria-selected="false">Replacement &amp; budget</button>
+  <button role="tab" aria-selected="false">PMs</button>
+  <button role="tab" aria-selected="false">Work orders</button>
+  <button role="tab" aria-selected="false">DVIRs</button>
+  <button role="tab" aria-selected="false">Tech Entry</button>
+ </div>
+ <div class="panes">
+  <div class="pane on" role="tabpanel"><div class="pshot"><img src="img/supervisor-dashboard.webp" alt="Supervisor dashboard (demo data)" loading="lazy"></div><div class="ptxt"><h3>Supervisor dashboard</h3><ul><li>Open WOs, unassigned work, overdue PMs and assets down on one screen</li><li>Wrench time and shop efficiency at a glance</li><li>One-click views for Mechanic, Supervisor, Fleet Manager and Director</li></ul><p class="vs">Many fleet systems take several reports to show this.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot"><img src="img/replacement-budget.webp" alt="Replacement budget planning (demo data)" loading="lazy"></div><div class="ptxt"><h3>Replacement scoring and budget</h3><ul><li>Every unit scored 0 to 100 from data already in the system</li><li>Age, miles/hours, lifetime repair cost, cost per mile vs. class, downtime</li><li>Budgets roll up by planned year and by class, with an inflation estimate</li></ul><p class="vs">Replacement planning often lives in a separate spreadsheet. Here it comes from the maintenance data.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot"><img src="img/asset-pm-schedules.webp" alt="PM schedules in the asset file (demo data)" loading="lazy"></div><div class="ptxt"><h3>PMs in the asset file</h3><ul><li>Intervals by miles and by days</li><li>Last done, next due and status for each schedule</li><li>Sits next to the unit's WOs, current meter and downtime</li></ul><p class="vs">No hunting through a separate module to see what's due.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot"><img src="img/printed-wo.webp" alt="Invoice-style printed work order (demo data)" loading="lazy"></div><div class="ptxt"><h3>Work orders that print like an invoice</h3><ul><li>Asset, VIN, department, priority, meter and tech in the header</li><li>Complaint, Cause, Correction and the PM checklist</li><li>Totals and signature lines</li></ul><p class="vs">A clean shop document, not a screen dump.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot duo"><img class="ph" src="img/dvir-mobile.webp" alt="Mobile DVIR checklist (demo data)" loading="lazy"><img src="img/dvir-auto-wo.webp" alt="DVIR record with auto-created WO (demo data)" loading="lazy"></div><div class="ptxt"><h3>Mobile DVIR with safety lockout</h3><ul><li>Drivers walk the unit on a phone: OK or Defect per item</li><li>A safety defect opens a WO right away and marks the unit Out of Service</li><li>The record shows the defect, the UNSAFE result and the WO it created</li></ul><p class="vs">No waiting for someone to re-key a paper form.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot"><img class="ph" src="img/tech-entry-mobile.webp" alt="Tech Entry and time clock (demo data)" loading="lazy"></div><div class="ptxt"><h3>Tech Entry and time clock</h3><ul><li>Clock in, switch jobs, break or clock out from a phone in the bay</li><li>Pick an open WO to prefill asset, meter and complaint</li><li>One job at a time, so time lands on the right WO line</li></ul><p class="vs">Time clock and WO labor in one place.</p></div></div>
+ </div>
+ <div class="tnav"><button class="arr" data-d="-1" aria-label="Previous screen">&larr;</button><div class="dots" aria-hidden="true"></div><button class="arr" data-d="1" aria-label="Next screen">&rarr;</button></div>
+</div>
+<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="#contact">Talk to Dan</a></div></div>
+<div class="calc reveal" id="score">
+ <div><div class="eyebrow" style="color:var(--amber)">Try it</div><h3>Replacement score, sample unit</h3><p class="sub">Move the sliders to see how a unit's score changes. Sample weights for illustration; real scoring uses each fleet's own data and class averages.</p>
+ <label>Age <output id="o-age"></output><input type="range" id="age" min="0" max="20" value="9"></label>
+ <label>Miles <output id="o-mi"></output><input type="range" id="mi" min="0" max="250000" step="5000" value="115000"></label>
+ <label>Lifetime repair cost, % of purchase price <output id="o-rc"></output><input type="range" id="rc" min="0" max="150" step="5" value="45"></label>
+ <label>Cost per mile vs. class average <output id="o-cpm"></output><input type="range" id="cpm" min="50" max="200" step="5" value="120"></label>
+ <label>Days down in the last year <output id="o-dn"></output><input type="range" id="dn" min="0" max="60" value="14"></label>
+ </div>
+ <div class="gauge"><svg viewBox="0 0 200 120" aria-hidden="true"><defs><linearGradient id="gg"><stop offset="0" stop-color="#4fb3ff"/><stop offset=".6" stop-color="#ffb627"/><stop offset="1" stop-color="#e8443a"/></linearGradient></defs><path d="M20 100a80 80 0 0 1 160 0" fill="none" stroke="#223447" stroke-width="16" stroke-linecap="round"/><path id="arc" d="M20 100a80 80 0 0 1 160 0" fill="none" stroke="url(#gg)" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/></svg>
+ <div class="gnum" id="sc" aria-live="polite">0</div><div class="gtag" id="st">Keep</div></div>
+</div>
+</div></section>
+<section class="pilot" id="pilot"><div class="w">
+<div class="eyebrow reveal">Pilot &amp; onboarding</div><h2 class="reveal">Start small. Prove it in one shop.</h2>
+<div class="pgrid">
+<ol class="steps reveal">
+<li><b>Start with one division</b>Pick Streets, Parks or another group and run a pilot on real units before anyone commits fleet-wide.</li>
+<li><b>Bring your spreadsheets</b>Asset lists, meters and PM intervals import from the spreadsheets you already keep.</li>
+<li><b>Quick Mechanic training</b>Screens are built for the phone in the bay, so Mechanics are working orders on day one.</li>
+<li><b>Grow when it works</b>Add divisions once the pilot shows results your team trusts.</li>
+</ol>
+<div class="phones reveal"><img src="img/dvir-mobile.webp" width="520" height="1173" alt="Mobile DVIR checklist (sample data)" loading="lazy"><img src="img/tech-entry-mobile.webp" width="520" height="1173" alt="Tech Entry time clock on a phone (sample data)" loading="lazy"><p class="cap2">Mobile DVIR and Tech Entry, sample data</p></div>
+</div></div></section>
+
+<section class="itp" id="it"><div class="w">
+<div class="eyebrow reveal">For IT &amp; Procurement</div><h2 class="reveal">Answers before you have to ask.</h2>
+<div class="cards six">
+ <div class="card reveal"><h3>Hosted in the U.S.</h3><p>Your fleet data is stored on servers in the United States.</p></div>
+ <div class="card reveal"><h3>Daily backups</h3><p>Data is backed up every day.</p></div>
+ <div class="card reveal"><h3>Secure sign-in</h3><p>Individual user accounts with role-based access for Mechanics, Supervisors, Fleet Managers and Directors.</p></div>
+ <div class="card reveal"><h3>Your data stays yours</h3><p>Export your records anytime, in standard formats.</p></div>
+ <div class="card reveal"><h3>Accessible design</h3><p>Readable contrast, keyboard-friendly controls and screens that work on phones.</p></div>
+ <div class="card reveal"><h3>Simple buying path</h3><p>Start with a pilot, then move to an annual subscription.</p></div>
+</div>
+<p class="price reveal"><b>Simple per-unit annual pricing.</b> Pilot pricing available.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="w reveal">
+<div class="eyebrow" style="color:var(--amber)">Contact</div><h2>Let's talk about your fleet.</h2>
+<p>Tell us what you run and where it hurts. You'll get a straight answer from someone who's worked the shop floor and presented to city councils.</p>
+<div class="ctas center"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a></div>
+<a class="mail" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a>
+</div></section>
+<!-- TODO(FMIS launch): wire this form to the real 7-day trial sign-up endpoint. It is a placeholder and submits nowhere. -->
+<dialog id="demo" aria-labelledby="demo-h"><form id="demo-f" novalidate>
+<button type="button" class="x" aria-label="Close">&times;</button>
+<h3 id="demo-h">Start your 7-day free trial</h3><p>Get 7 days of free access to the FMIS with sample data.</p>
+<label>Email <span class="req">(required)</span><input type="email" name="email" autocomplete="email" required></label>
+<label>Name <span>(optional)</span><input name="name" autocomplete="name"></label>
+<label>Organization <span>(optional)</span><input name="org" autocomplete="organization"></label>
+<p class="err" id="demo-err" role="alert"></p>
+<button class="cta" type="submit">Start my free trial</button>
+</form><div id="demo-ok" hidden role="status"><h3>Thanks!</h3><p>Free trial access is coming soon, and we'll email you as soon as it's live.</p><button type="button" class="cta x2">Close</button></div></dialog>
+<footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah</footer>
+
+<script>
+const BUSINESS_NAME = "Civic Fleet Services"; // <-- swap the business name here (only place to change)
+document.querySelectorAll('[data-name]').forEach(e=>e.textContent=BUSINESS_NAME);
+document.title=BUSINESS_NAME+" | Fleet Consulting";
+document.getElementById('y').textContent=new Date().getFullYear();
+const els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(e=>e.classList.add('in'))}
+else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});els.forEach(e=>io.observe(e))}
+
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pg=document.querySelector('.prog');addEventListener('scroll',()=>{const d=document.documentElement;pg.style.transform='scaleX('+(d.scrollTop/(d.scrollHeight-d.clientHeight||1))+')'},{passive:true});
+const tabs=[...document.querySelectorAll('.tabs button')],panes=[...document.querySelectorAll('.pane')],dots=document.querySelector('.dots');
+panes.forEach(()=>dots.appendChild(document.createElement('i')));
+let cur=0,timer=null,user=false;
+const go=i=>{cur=(i+panes.length)%panes.length;tabs.forEach((t,j)=>{t.setAttribute('aria-selected',j==cur);t.tabIndex=j==cur?0:-1});panes.forEach((p,j)=>p.classList.toggle('on',j==cur));[...dots.children].forEach((d,j)=>d.classList.toggle('on',j==cur))};
+const stop=()=>{user=true;clearInterval(timer);timer=null};
+tabs.forEach((t,j)=>{t.onclick=()=>{stop();go(j)};t.onkeydown=e=>{if(e.key=='ArrowRight'){stop();go(cur+1);tabs[cur].focus()}if(e.key=='ArrowLeft'){stop();go(cur-1);tabs[cur].focus()}}});
+document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
+let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
+go(0);
+// Demo sign-up: placeholder only.
+// TODO(FMIS launch): replace the success branch below with a POST to the demo sign-up endpoint. Nothing is sent anywhere yet.
+const dlg=document.getElementById('demo'),df=document.getElementById('demo-f'),dok=document.getElementById('demo-ok'),derr=document.getElementById('demo-err');
+const openDemo=()=>{df.hidden=false;dok.hidden=true;derr.textContent='';if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');df.email.focus()};
+const closeDemo=()=>{if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
+document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
+dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
+dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
+df.onsubmit=e=>{e.preventDefault();const v=df.email.value.trim();
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){derr.textContent='Please enter a valid email address.';df.email.focus();return}
+ derr.textContent='';df.reset();df.hidden=true;dok.hidden=false};
+const $=id=>document.getElementById(id),arc=$('arc');
+const calc=()=>{const a=+$('age').value,m=+$('mi').value,r=+$('rc').value,c=+$('cpm').value,d=+$('dn').value;
+$('o-age').textContent=a+' yrs';$('o-mi').textContent=m.toLocaleString();$('o-rc').textContent=r+'%';$('o-cpm').textContent=c+'%';$('o-dn').textContent=d+' days';
+const cl=v=>Math.max(0,Math.min(1,v));
+const s=Math.round(100*(.25*cl(a/12)+.2*cl(m/150000)+.25*cl(r/100)+.15*cl((c-80)/80)+.15*cl(d/30)));
+$('sc').textContent=s;arc.setAttribute('stroke-dasharray',s+' 100');
+$('st').textContent=s>=70?'Replace soon':s>=45?'Plan for it':'Keep'};
+['age','mi','rc','cpm','dn'].forEach(id=>$(id).addEventListener('input',calc));calc();
+</script></body></html>
