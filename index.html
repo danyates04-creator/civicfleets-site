@@ -121,7 +121,7 @@ dialog#demo::backdrop{background:#05090dcc}
 .hgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center}
 h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem;max-width:22ch}
 .ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.4rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
-.ctas.center{justify-content:center}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.ctas.center{justify-content:center}.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .hshot{margin:0}.hshot img{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#fff;display:block}
 .hshot figcaption{font-size:.8rem;color:#a3b4c4;margin-top:.5rem;text-align:right}
 .also{margin-top:1.2rem;color:#43515f}
@@ -145,7 +145,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <div class="hgrid"><div>
 <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
 <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
-<div class="ctas"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="#contact">Talk to Dan</a></div>
+<div class="ctas"><button type="button" class="cta demo-open">Request 7-Day Trial &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
 </div>
 <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
 </div></div>
@@ -201,7 +201,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  </div>
  <div class="tnav"><button class="arr" data-d="-1" aria-label="Previous screen">&larr;</button><div class="dots" aria-hidden="true"></div><button class="arr" data-d="1" aria-label="Next screen">&rarr;</button></div>
 </div>
-<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="#contact">Talk to Dan</a></div></div>
+<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><button type="button" class="cta demo-open">Request 7-Day Trial &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><a class="ghost" href="#contact">Talk to Dan</a></div></div>
 <div class="calc reveal" id="score">
  <div><div class="eyebrow" style="color:var(--amber)">Try it</div><h3>Replacement score, sample unit</h3><p class="sub">Move the sliders to see how a unit's score changes. Sample weights for illustration; real scoring uses each fleet's own data and class averages.</p>
  <label>Age <output id="o-age"></output><input type="range" id="age" min="0" max="20" value="9"></label>
@@ -242,19 +242,21 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <section class="contact" id="contact"><div class="w reveal">
 <div class="eyebrow" style="color:var(--amber)">Contact</div><h2>Let's talk about your fleet.</h2>
 <p>Tell us what you run and where it hurts. You'll get a straight answer from someone who's worked the shop floor and presented to city councils.</p>
-<div class="ctas center"><button type="button" class="cta demo-open">Start your 7-day free trial &rarr;</button><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a></div>
+<div class="ctas center"><button type="button" class="cta demo-open">Request 7-Day Trial &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a></div>
 <a class="mail" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a>
 </div></section>
-<!-- TODO(FMIS launch): wire this form to the real 7-day trial sign-up endpoint. It is a placeholder and submits nowhere. -->
 <dialog id="demo" aria-labelledby="demo-h"><form id="demo-f" novalidate>
 <button type="button" class="x" aria-label="Close">&times;</button>
-<h3 id="demo-h">Start your 7-day free trial</h3><p>Get 7 days of free access to the FMIS with sample data.</p>
+<h3 id="demo-h">Request a 7-day trial</h3><p>Tell us a little about your fleet. Dan will reply with your invite code.</p>
+<label>Name <span class="req">(required)</span><input name="name" autocomplete="name" required></label>
+<label>Title <span class="req">(required)</span><input name="title" autocomplete="organization-title" required></label>
+<label>City / agency <span class="req">(required)</span><input name="org" autocomplete="organization" required></label>
 <label>Email <span class="req">(required)</span><input type="email" name="email" autocomplete="email" required></label>
-<label>Name <span>(optional)</span><input name="name" autocomplete="name"></label>
-<label>Organization <span>(optional)</span><input name="org" autocomplete="organization"></label>
+<label>Fleet size <span>(optional)</span><input name="fleet" inputmode="numeric" placeholder="e.g. 150 units"></label>
+<div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
 <p class="err" id="demo-err" role="alert"></p>
-<button class="cta" type="submit">Start my free trial</button>
-</form><div id="demo-ok" hidden role="status"><h3>Thanks!</h3><p>Free trial access is coming soon, and we'll email you as soon as it's live.</p><button type="button" class="cta x2">Close</button></div></dialog>
+<button class="cta" type="submit">Send request</button>
+</form><div id="demo-ok" hidden role="status"><h3>Almost done</h3><p>Your email app opened with the request filled in. Press Send there and Dan will reply with your invite code. If nothing opened, email <a href="mailto:dyates@civicfleets.com" style="color:#fff">dyates@civicfleets.com</a>.</p><button type="button" class="cta x2">Close</button></div></dialog>
 <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah</footer>
 
 <script>
@@ -277,16 +279,19 @@ tabs.forEach((t,j)=>{t.onclick=()=>{stop();go(j)};t.onkeydown=e=>{if(e.key=='Arr
 document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
 let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
 go(0);
-// Demo sign-up: placeholder only.
-// TODO(FMIS launch): replace the success branch below with a POST to the demo sign-up endpoint. Nothing is sent anywhere yet.
+// Trial request: opens a pre-filled email to dyates@civicfleets.com (static site, no server).
 const dlg=document.getElementById('demo'),df=document.getElementById('demo-f'),dok=document.getElementById('demo-ok'),derr=document.getElementById('demo-err');
-const openDemo=()=>{df.hidden=false;dok.hidden=true;derr.textContent='';if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');df.email.focus()};
+const openDemo=()=>{df.hidden=false;dok.hidden=true;derr.textContent='';if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');df.name.focus()};
 const closeDemo=()=>{if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
 document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
 dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
 dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
-df.onsubmit=e=>{e.preventDefault();const v=df.email.value.trim();
+df.onsubmit=e=>{e.preventDefault();if(df.website.value)return closeDemo();
+ const f=k=>df[k].value.trim(),v=f('email');
+ if(!f('name')||!f('title')||!f('org')){derr.textContent='Please fill in name, title and city/agency.';return}
  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){derr.textContent='Please enter a valid email address.';df.email.focus();return}
+ const body='Name: '+f('name')+'\nTitle: '+f('title')+'\nCity/agency: '+f('org')+'\nEmail: '+v+'\nFleet size: '+(f('fleet')||'-')+'\n';
+ location.href='mailto:dyates@civicfleets.com?subject='+encodeURIComponent('7-Day Trial Request: '+f('org'))+'&body='+encodeURIComponent(body);
  derr.textContent='';df.reset();df.hidden=true;dok.hidden=false};
 const $=id=>document.getElementById(id),arc=$('arc');
 const calc=()=>{const a=+$('age').value,m=+$('mi').value,r=+$('rc').value,c=+$('cpm').value,d=+$('dn').value;
