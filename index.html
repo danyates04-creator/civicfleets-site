@@ -245,18 +245,10 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <div class="ctas center"><button type="button" class="cta demo-open">Request 7-Day Trial &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a></div>
 <a class="mail" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a>
 </div></section>
-<dialog id="demo" aria-labelledby="demo-h"><form id="demo-f" novalidate>
+<dialog id="demo" aria-labelledby="demo-h"><div role="status">
 <button type="button" class="x" aria-label="Close">&times;</button>
-<h3 id="demo-h">Request a 7-day trial</h3><p>Tell us a little about your fleet. Dan will reply with your invite code.</p>
-<label>Name <span class="req">(required)</span><input name="name" autocomplete="name" required></label>
-<label>Title <span class="req">(required)</span><input name="title" autocomplete="organization-title" required></label>
-<label>City / agency <span class="req">(required)</span><input name="org" autocomplete="organization" required></label>
-<label>Email <span class="req">(required)</span><input type="email" name="email" autocomplete="email" required></label>
-<label>Fleet size <span>(optional)</span><input name="fleet" inputmode="numeric" placeholder="e.g. 150 units"></label>
-<div class="hp" aria-hidden="true"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div>
-<p class="err" id="demo-err" role="alert"></p>
-<button class="cta" type="submit">Send request</button>
-</form><div id="demo-ok" hidden role="status"><h3>Almost done</h3><p>Your email app opened with the request filled in. Press Send there and Dan will reply with your invite code. If nothing opened, email <a href="mailto:dyates@civicfleets.com" style="color:#fff">dyates@civicfleets.com</a>.</p><button type="button" class="cta x2">Close</button></div></dialog>
+<h3 id="demo-h">Under construction</h3><p>Be back shortly.</p>
+<button type="button" class="cta x2">Close</button></div></dialog>
 <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah</footer>
 
 <script>
@@ -279,20 +271,13 @@ tabs.forEach((t,j)=>{t.onclick=()=>{stop();go(j)};t.onkeydown=e=>{if(e.key=='Arr
 document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
 let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
 go(0);
-// Trial request: opens a pre-filled email to dyates@civicfleets.com (static site, no server).
-const dlg=document.getElementById('demo'),df=document.getElementById('demo-f'),dok=document.getElementById('demo-ok'),derr=document.getElementById('demo-err');
-const openDemo=()=>{df.hidden=false;dok.hidden=true;derr.textContent='';if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');df.name.focus()};
+// Request 7-Day Trial: under construction notice only.
+const dlg=document.getElementById('demo');
+const openDemo=()=>{if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','')};
 const closeDemo=()=>{if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
 document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
 dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
 dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
-df.onsubmit=e=>{e.preventDefault();if(df.website.value)return closeDemo();
- const f=k=>df[k].value.trim(),v=f('email');
- if(!f('name')||!f('title')||!f('org')){derr.textContent='Please fill in name, title and city/agency.';return}
- if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){derr.textContent='Please enter a valid email address.';df.email.focus();return}
- const body='Name: '+f('name')+'\nTitle: '+f('title')+'\nCity/agency: '+f('org')+'\nEmail: '+v+'\nFleet size: '+(f('fleet')||'-')+'\n';
- location.href='mailto:dyates@civicfleets.com?subject='+encodeURIComponent('7-Day Trial Request: '+f('org'))+'&body='+encodeURIComponent(body);
- derr.textContent='';df.reset();df.hidden=true;dok.hidden=false};
 const $=id=>document.getElementById(id),arc=$('arc');
 const calc=()=>{const a=+$('age').value,m=+$('mi').value,r=+$('rc').value,c=+$('cpm').value,d=+$('dn').value;
 $('o-age').textContent=a+' yrs';$('o-mi').textContent=m.toLocaleString();$('o-rc').textContent=r+'%';$('o-cpm').textContent=c+'%';$('o-dn').textContent=d+' days';
