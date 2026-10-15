@@ -10,9 +10,8 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
 .w{max-width:1120px;margin:0 auto;padding:0 1.25rem}
-.ib{position:sticky;top:0;z-index:30;height:2.6rem;display:flex;align-items:center;justify-content:center;background:#ffb627;color:#0d1620;font-weight:800;text-decoration:none;font-size:.95rem;padding:0 1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 1px 6px #0d162033}.ib:hover,.ib:focus-visible{background:#ffc94d;text-decoration:underline}html{scroll-padding-top:3.2rem}
-@media (max-width:520px){.ib{font-size:.82rem;height:2.4rem}}
-nav{position:absolute;top:2.6rem;left:0;right:0;z-index:5;padding:1.1rem 0}
+
+nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:1.1rem 0}
 nav .w{display:flex;justify-content:space-between;align-items:center}
 .brand{color:#fff;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:1rem}
 .brand b{color:var(--amber)}
@@ -109,21 +108,22 @@ h1.tag{font-size:clamp(1.6rem,3.6vw,2.6rem);max-width:none}
 .pd{display:inline-flex;align-items:center;gap:.8rem;flex-wrap:wrap}button.tl{background:none;border:0;padding:0;font:inherit;font-size:.9rem;color:#a3b4c4;text-decoration:underline;cursor:pointer}button.tl:hover{color:#fff}button.ghost{background:none;border:0;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
 .demo-cta{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;justify-content:space-between;margin:2rem 0 0;padding:1.2rem 1.4rem;border-radius:16px;background:linear-gradient(90deg,#ffb62722,#e8443a22);border:1px solid #ffb62766}
 .demo-cta b{display:block;font-size:1.3rem}.demo-cta span{color:#d5e0ea}.demo-cta .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
-dialog#demo{border:0;border-radius:18px;padding:1.8rem;width:min(440px,92vw);background:#0d1620;color:#fff;box-shadow:0 30px 80px #000c}
-dialog#demo::backdrop{background:#05090dcc}
-#demo h3{margin:0 0 .3rem;font-size:1.5rem;color:var(--amber)}#demo p{color:#c9d6e2;margin:.2rem 0 1rem}
+dialog#demo,dialog#trial{border:0;border-radius:18px;padding:1.8rem;width:min(440px,92vw);background:#0d1620;color:#fff;box-shadow:0 30px 80px #000c}
+dialog#demo::backdrop,dialog#trial::backdrop{background:#05090dcc}
+#demo h3,#trial h3{margin:0 0 .3rem;font-size:1.5rem;color:var(--amber)}#demo p,#trial p{color:#c9d6e2;margin:.2rem 0 1rem}
 #demo label{display:block;margin:.7rem 0;font-size:.92rem;font-weight:600}#demo label span{color:#a3b4c4;font-weight:400}
 #demo input{display:block;width:100%;margin-top:.3rem;padding:.7rem .8rem;border-radius:10px;border:1px solid #ffffff33;background:#132536;color:#fff;font:inherit}
 #demo input:focus{outline:2px solid var(--amber);border-color:transparent}
-#demo .cta{border:0;font:inherit;font-weight:800;cursor:pointer;margin-top:.6rem;width:100%;justify-content:center}
-#demo .x{position:absolute;top:.6rem;right:.8rem;background:none;border:0;color:#9fb2c4;font-size:1.8rem;cursor:pointer}
+#demo .cta,#trial .cta{border:0;font:inherit;font-weight:800;cursor:pointer;margin-top:.6rem;width:100%;justify-content:center}
+#trial .cta{text-decoration:none;display:flex}#trial .tclose{display:block;width:100%;margin-top:.6rem;padding:.7rem;border-radius:999px;border:1px solid #ffffff44;background:none;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+#demo .x,#trial .x{position:absolute;top:.6rem;right:.8rem;background:none;border:0;color:#9fb2c4;font-size:1.8rem;cursor:pointer}
 #demo .err{color:#ff8a80;min-height:1.2em;margin:.2rem 0;font-size:.9rem}
 
 .hero{min-height:auto}.hero .w{padding-top:5.5rem;padding-bottom:4rem}
 .hgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center}
 h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem;max-width:22ch}
 .ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.4rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
-.ctas.center{justify-content:center}.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.hero .start small{color:#ffd27a;font-size:.92rem;font-weight:800;margin-top:.35rem}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.ctas.center{justify-content:center}.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .hshot{margin:0}.hshot img{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#fff;display:block}
 .hshot figcaption{font-size:.8rem;color:#a3b4c4;margin-top:.5rem;text-align:right}
 .also{margin-top:1.2rem;color:#43515f}
@@ -144,8 +144,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 @media (max-width:860px){.about .agrid{grid-template-columns:1fr}}
 .about .ctas .ghost.dk{color:var(--ink)}.price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
-@media (max-width:520px){nav{top:2.4rem}}
-h2{font-size:clamp(2rem,4.4vw,3.1rem)!important;font-weight:900}.show h2.big{font-size:clamp(2.2rem,5.4vw,3.9rem)!important}.eyebrow{font-weight:900;font-size:.88rem}.card h3,.ways .card b,.soon li b,.ptxt h3,.about h3{font-weight:800;font-size:1.22em}
+.eyebrow{font-weight:800;font-size:1rem;letter-spacing:.1em;color:#8f1a13}.show .eyebrow{color:#ffc94d}
 .dn{position:fixed;right:1.1rem;top:50%;transform:translateY(-50%);z-index:25;display:flex;flex-direction:column;gap:.9rem;margin:0;padding:0;list-style:none}
 .dn a{display:flex;align-items:center;justify-content:flex-end;gap:.6rem;text-decoration:none}
 .dn i{display:block;width:12px;height:12px;border-radius:50%;background:#9fb2c4aa;border:2px solid #fff;box-shadow:0 0 0 1px #0d162066;transition:transform .2s,background .2s}
@@ -155,7 +154,6 @@ h2{font-size:clamp(2rem,4.4vw,3.1rem)!important;font-weight:900}.show h2.big{fon
 @media (max-width:900px){.dn{display:none}}
 .pilot .ctas .ghost{color:var(--ink)}.pilot .start small{color:#43515f}.pilot button.tl{color:#43515f}.pilot button.tl:hover{color:var(--ink)}
 </style></head><body>
-<a class="ib" href="https://app.civicfleets.com/signup">Have an invite code? Start your 7-Day Trial &rarr;</a>
 <div class="prog" aria-hidden="true"></div>
 <div class="dn" role="navigation" aria-label="Sections"><a href="#services"><span>Services</span><i></i></a><a href="#fmis"><span>Software</span><i></i></a><a href="#pilot"><span>Try it</span><i></i></a><a href="#it"><span>IT &amp; Procurement</span><i></i></a><a href="#contact"><span>Who's behind it</span><i></i></a></div>
 <nav><div class="w"><div class="brand">Civic Fleet Services</div><a class="mini" href="#contact">Contact</a></div></nav>
@@ -165,7 +163,7 @@ h2{font-size:clamp(2rem,4.4vw,3.1rem)!important;font-weight:900}.show h2.big{fon
 <div class="hgrid"><div>
 <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
 <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
-<div class="ctas"><span class="start"><a class="cta" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>Have an invite code?</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
+<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
 </div>
 <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
 </div></div>
@@ -220,7 +218,7 @@ h2{font-size:clamp(2rem,4.4vw,3.1rem)!important;font-weight:900}.show h2.big{fon
  <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
  <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
 </div>
-<div class="ctas center reveal"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div>
+<div class="ctas center reveal"><span class="start"><a class="ghost trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>By invitation for now</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div>
 </div></section>
 
 <section class="itp" id="it"><div class="w">
@@ -253,6 +251,11 @@ h2{font-size:clamp(2rem,4.4vw,3.1rem)!important;font-weight:900}.show h2.big{fon
 <button type="button" class="x" aria-label="Close">&times;</button>
 <h3 id="demo-h">Under construction</h3><p>Be back shortly.</p>
 <button type="button" class="cta x2">Close</button></div></dialog>
+<dialog id="trial" aria-labelledby="trial-h"><div>
+<button type="button" class="x" aria-label="Close">&times;</button>
+<h3 id="trial-h">Site under construction</h3><p>The 7-Day Trial is by invitation only for now. Got an invite email? Continue to sign up with your invite code.</p>
+<a class="cta" href="https://app.civicfleets.com/signup">I have an invite code &rarr;</a>
+<button type="button" class="tclose">Close</button></div></dialog>
 <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah</footer>
 
 <script>
@@ -282,6 +285,12 @@ const closeDemo=()=>{if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
 document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
 dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
 dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
+// Start 7-Day Trial: invitation-only notice, then on to sign-up.
+const tdl=document.getElementById('trial');
+const closeT=()=>{if(tdl.close)tdl.close();else tdl.removeAttribute('open')};
+document.querySelectorAll('.trial-open').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();if(tdl.showModal)tdl.showModal();else tdl.setAttribute('open','')}));
+tdl.querySelectorAll('.x,.tclose').forEach(b=>b.onclick=closeT);
+tdl.addEventListener('click',e=>{if(e.target===tdl)closeT()});
 const vb=document.getElementById('vbox'),vbv=vb.querySelector('video'),sv=document.getElementById('tourvid');sv.addEventListener('play',stop);
 const openV=()=>{sv.pause();vbv.currentTime=sv.currentTime||0;vb.showModal?vb.showModal():vb.setAttribute('open','');vbv.play().catch(()=>{})};
 const closeV=()=>{vbv.pause();vb.close?vb.close():vb.removeAttribute('open')};
