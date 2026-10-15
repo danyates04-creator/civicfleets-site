@@ -6,7 +6,7 @@
  <title>Civic Fleet Services LLC | Fleet Consulting</title>
  <meta name="description" content="Civic Fleet Services LLC: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
  <meta property="og:title" content="Civic Fleet Services LLC | Fleet Consulting">
-@@ -164,25 +164,17 @@
+@@ -159,25 +159,17 @@
  .dn a.on i{background:var(--amber);transform:scale(1.35)}
  @media (max-width:900px){.dn{display:none}}
  .pilot .ctas .ghost{color:var(--ink)}.pilot .start small{color:#43515f}.pilot button.tl{color:#43515f}.pilot button.tl:hover{color:var(--ink)}
@@ -25,7 +25,7 @@
 +<nav><div class="w"><a class="brand" href="/"><img src="img/brand/cfs-lockup-dark.png" width="900" height="260" alt="Civic Fleet Services"></a><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><a class="mini" href="#contact">Contact</a></span></div></nav>
  
  <header class="hero"><div class="w">
- <div class="wm" aria-label="Civic Fleet Services LLC"><span class="wm1">Civic Fleet <span class="wm2">Services</span><span class="wm3">LLC</span></span></div>
+ <div class="wm"><img class="wm-logo" src="img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></div>
  <div class="hgrid"><div>
  <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
  <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
@@ -34,7 +34,7 @@
  </div>
  <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
  </div></div>
-@@ -238,7 +230,7 @@
+@@ -233,7 +225,7 @@
   <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
   <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
  </div>
@@ -43,7 +43,7 @@
  </div></section>
  
  <section class="itp" id="it"><div class="w">
-@@ -262,10 +254,19 @@
+@@ -257,10 +249,19 @@
  <li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
  <li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
  </ul>
@@ -64,7 +64,7 @@
  <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
  
  <script>
-@@ -288,6 +289,19 @@
+@@ -283,6 +284,19 @@
  document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
  let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
  go(0);

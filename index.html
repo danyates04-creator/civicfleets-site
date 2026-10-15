@@ -105,12 +105,7 @@ footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-si
 @media (prefers-reduced-motion:reduce){.path li{opacity:1}.scan{display:none}}
 
 .wm{margin-bottom:1.4rem;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
-.wm1{display:inline-block;position:relative;max-width:100%;white-space:nowrap;font-size:min(5.5rem,calc((100vw - 2.5rem) / 12.4));color:#fff;animation:wmIn .3s ease both}
-.wm2{color:#fff}
-.wm3{color:#fff;font-size:.34em;letter-spacing:.06em;margin-left:.45em;vertical-align:.12em;font-weight:800}
-.wm1:after{content:"";position:absolute;left:0;bottom:-.08em;height:.07em;width:100%;background:linear-gradient(90deg,var(--amber),var(--red));transform-origin:0 50%;animation:bar .8s .7s ease both}
-@keyframes wmIn{from{opacity:0}to{opacity:1}}
-@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.wm-logo{display:block;width:min(560px,100%);height:auto;margin-left:-1.6%}
 h1.tag{font-size:clamp(1.6rem,3.6vw,2.6rem);max-width:none}
 .show h2.big{font-size:clamp(2rem,5vw,3.6rem);line-height:1.05}.show h2.big span{background:linear-gradient(90deg,var(--amber),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
 .subline{font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:700;color:#fff;margin:.2rem 0 .6rem}
@@ -178,7 +173,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <nav><div class="w"><a class="brand" href="/"><img src="img/brand/cfs-lockup-dark.png" width="900" height="260" alt="Civic Fleet Services"></a><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><span class="mini pl-off" aria-disabled="true" title="Available at launch">Contact</span></span></div></nav>
 
 <header class="hero"><div class="w">
-<div class="wm" aria-label="Civic Fleet Services LLC"><span class="wm1">Civic Fleet <span class="wm2">Services</span><span class="wm3">LLC</span></span></div>
+<div class="wm"><img class="wm-logo" src="img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></div>
 <div class="hgrid"><div>
 <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
 <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
