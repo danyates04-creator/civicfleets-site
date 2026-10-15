@@ -138,6 +138,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 .live{display:inline-flex;align-items:center;gap:.5rem;margin:1.6rem 0 .6rem;padding:.35rem .9rem;border-radius:999px;background:#1f8a4c22;border:1px solid #3ccf7a88;color:#7ff0ad;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}.live small{color:#c9d6e2;font-weight:600;letter-spacing:0;text-transform:none;font-size:.85rem}.livedot{width:.6rem;height:.6rem;border-radius:50%;background:#3ccf7a;box-shadow:0 0 0 4px #3ccf7a33}
 .vid{margin:2.2rem 0 0}.vid video{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#0d1620;display:block}.vid figcaption{font-size:.85rem;color:#a3b4c4;margin-top:.5rem}.vid h3{margin:0 0 .6rem;font-size:1.4rem}
 .about .agrid{display:grid;grid-template-columns:220px 1fr;gap:2.2rem;align-items:center;margin-top:1.4rem}.about .ph{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 14px 34px #0d162033}.about .phx{display:grid;place-items:center;text-align:center;background:#dfe6ee;color:#43515f;font-weight:700;font-size:.85rem;border:3px dashed #9fb2c4}.about h3{margin:0;font-size:1.5rem}.about .role{color:#b3261e;font-weight:800;margin:.2rem 0 .8rem}.about ul{margin:.8rem 0 0;padding-left:1.1rem;color:#43515f}.about li{margin:.35rem 0}
+.about .agrid.nophoto{grid-template-columns:1fr;max-width:760px}
 @media (max-width:860px){.about .agrid{grid-template-columns:1fr}}
 .price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
@@ -262,9 +263,9 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 
 <section class="about" id="about"><div class="w">
 <div class="eyebrow reveal">About</div><h2 class="reveal">Who's behind it.</h2>
-<div class="agrid reveal">
+<div class="agrid nophoto reveal">
 <!-- TODO(Dan): swap placeholder for photo from LinkedIn (save as img/dan-yates.jpg, then use <img class="ph" src="img/dan-yates.jpg" alt="Dan Yates">) -->
-<div class="ph phx" role="img" aria-label="Photo of Dan Yates coming soon">PHOTO PLACEHOLDER<br>Dan Yates</div>
+<!-- Photo slot hidden until photo is added; when adding, remove "nophoto" from .agrid above. -->
 <div><h3>Dan Yates</h3><p class="role">Fleet Manager &middot; Founder, <span data-name>Civic Fleet Services LLC</span></p>
 <p>A Fleet Manager who came up as a Mechanic. Dan built the FMIS around how city shops actually work, from the bay to the budget meeting.</p>
 <ul>
