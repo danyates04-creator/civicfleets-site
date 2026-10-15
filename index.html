@@ -140,7 +140,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 .about .agrid{display:grid;grid-template-columns:220px 1fr;gap:2.2rem;align-items:center;margin-top:1.4rem}.about .ph{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 14px 34px #0d162033}.about .phx{display:grid;place-items:center;text-align:center;background:#dfe6ee;color:#43515f;font-weight:700;font-size:.85rem;border:3px dashed #9fb2c4}.about h3{margin:0;font-size:1.5rem}.about .role{color:#b3261e;font-weight:800;margin:.2rem 0 .8rem}.about ul{margin:.8rem 0 0;padding-left:1.1rem;color:#43515f}.about li{margin:.35rem 0}
 .about .agrid.nophoto{grid-template-columns:1fr;max-width:760px}
 @media (max-width:860px){.about .agrid{grid-template-columns:1fr}}
-.price{margin-top:2rem;font-size:1.15rem;text-align:center}
+.about .ctas .ghost.dk{color:var(--ink)}.price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
 </style></head><body>
 <div class="prog" aria-hidden="true"></div>
@@ -167,27 +167,10 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 </div>
 <p class="also">Also available for private and commercial fleets.</p></div></div></section>
 
-<section class="story"><div class="w">
-<div class="reveal"><div class="eyebrow">Background</div><h2>From the shop floor to Fleet Manager.</h2>
-<p>Dan came up as a Mechanic and moved into leading maintenance teams. He has served as a Fleet Manager for city and fire department fleets and supervised commuter rail vehicle maintenance. That background means advice that respects both the budget and the bay.</p></div>
-<ul class="path reveal">
- <li><b>Came up as a Mechanic</b>Hands-on maintenance roots</li>
- <li><b>Commuter rail maintenance supervisor</b>Rail vehicle maintenance leadership</li>
- <li><b>Fleet Manager, city &amp; fire fleets</b>Municipal and public-safety fleet leadership</li>
- <li><b>Today: <span data-name>Civic Fleet Services LLC</span></b>Fleet software and consulting for city and public fleets</li>
-</ul></div></section>
-
 <section class="show" id="fmis"><div class="w">
 <div class="eyebrow reveal" style="color:var(--amber)">Fleet management software</div>
 <h2 class="reveal big">No two fleets run the same.<br><span>Your fleet software shouldn&rsquo;t either.</span></h2>
-<p class="subline reveal">Custom software for your fleet, built by a Fleet Manager.</p>
-<p class="sub reveal">Take the tour. Every screen below is from the working FMIS. <span class="demo-note">Sample data: fictional "Demo Valley, UT" fleet</span></p>
-<div class="caps reveal">
- <div class="cap"><b>0&ndash;100</b><span>replacement score per unit</span></div>
- <div class="cap"><b>Class &amp; year</b><span>budget roll-ups with inflation</span></div>
- <div class="cap"><b>Miles + days</b><span>PM intervals, next due, status</span></div>
- <div class="cap"><b>Defect &rarr; WO</b><span>safety defect opens a WO right away</span></div>
-</div>
+<p class="sub reveal">Built by a Fleet Manager. <span class="demo-note">Sample data: fictional "Demo Valley, UT" fleet</span></p>
 <div class="live reveal"><span class="livedot" aria-hidden="true"></span>Live today <small>in the working FMIS, not a mockup</small></div>
 <div class="tour reveal">
  <div class="tabs" role="tablist" aria-label="FMIS tour">
@@ -210,76 +193,47 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 </div>
 <figure class="vid reveal" id="walkthrough"><h3>Watch a 75-second walkthrough</h3>
 <video controls muted playsinline preload="none" poster="img/walkthrough-poster.jpg" width="1280" height="800"><source src="video/walkthrough.mp4" type="video/mp4">Your browser can't play this video.</video>
-<figcaption>Silent screen capture: dashboard, work orders, a work order, PM due list, unit file, driver inspection, Tech Entry and reports. Sample Demo Valley data.</figcaption></figure>
+<figcaption>Silent screen capture, sample Demo Valley data.</figcaption></figure>
 <div class="soon reveal"><div class="eyebrow" style="color:var(--amber)">Coming soon</div><ul>
-<li><b>Vehicle purchase, build and order tracker</b>Follow every new unit from quote and PO through build, delivery and upfit to in service.</li>
-<li><b>In-app messaging from the work order</b>Parts to Mechanic (your parts are in), Admin to Mechanic, Supervisor to Mechanic, and Mechanic to Parts, all tied to the work order. Email or text alerts optional.</li>
-<li><b>Surplus to auction tracker</b>Move units from surplus to decommissioned to auction, with aging alerts, police data-wipe checklist, and expected vs actual sale price.</li>
-<li><b>AI-assisted FMIS</b>AI built into the work order: suggested repair steps, the 3 C's written from a Mechanic's quick notes, and plain-English answers to fleet questions.</li>
+<li><b>Vehicle purchase, build and order tracker</b>Quote and PO through build, upfit and in service.</li>
+<li><b>In-app messaging from the work order</b>Parts, Supervisors and Mechanics message each other on the work order.</li>
+<li><b>Surplus to auction tracker</b>Surplus to auction, with aging alerts and expected vs. actual sale price.</li>
+<li><b>AI-assisted FMIS</b>Suggested repair steps and the 3 C's written from a Mechanic's quick notes.</li>
 </ul></div>
-<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div></div>
-<div class="calc reveal" id="score">
- <div><div class="eyebrow" style="color:var(--amber)">Try it</div><h3>Replacement score, sample unit</h3><p class="sub">Move the sliders to see how a unit's score changes. Sample weights for illustration; real scoring uses each fleet's own data and class averages.</p>
- <label>Age <output id="o-age"></output><input type="range" id="age" min="0" max="20" value="9"></label>
- <label>Miles <output id="o-mi"></output><input type="range" id="mi" min="0" max="250000" step="5000" value="115000"></label>
- <label>Lifetime repair cost, % of purchase price <output id="o-rc"></output><input type="range" id="rc" min="0" max="150" step="5" value="45"></label>
- <label>Cost per mile vs. class average <output id="o-cpm"></output><input type="range" id="cpm" min="50" max="200" step="5" value="120"></label>
- <label>Days down in the last year <output id="o-dn"></output><input type="range" id="dn" min="0" max="60" value="14"></label>
- </div>
- <div class="gauge"><svg viewBox="0 0 200 120" aria-hidden="true"><defs><linearGradient id="gg"><stop offset="0" stop-color="#4fb3ff"/><stop offset=".6" stop-color="#ffb627"/><stop offset="1" stop-color="#e8443a"/></linearGradient></defs><path d="M20 100a80 80 0 0 1 160 0" fill="none" stroke="#223447" stroke-width="16" stroke-linecap="round"/><path id="arc" d="M20 100a80 80 0 0 1 160 0" fill="none" stroke="url(#gg)" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/></svg>
- <div class="gnum" id="sc" aria-live="polite">0</div><div class="gtag" id="st">Keep</div></div>
-</div>
 </div></section>
 <section class="pilot" id="pilot"><div class="w">
-<div class="eyebrow reveal">Demo, trial or pilot</div><h2 class="reveal">Three ways to see if it fits.</h2>
+<div class="eyebrow reveal">Try it</div><h2 class="reveal">Two ways to see if it fits.</h2>
 <div class="ways cards">
- <div class="card reveal"><b>Start 7-Day Trial</b><p>Try the full FMIS on your own for 7 days, using sample Demo Valley data. Needs an invite code.</p></div>
- <div class="card reveal"><b>Free pilot for your city</b><p>Run part of your real fleet on the FMIS, free, for 60 to 90 days before you buy anything.</p></div>
- <div class="card reveal"><b>Book a demo</b><p>A live walkthrough with Dan. You ask questions, he shows the screens that matter to your shop. About 30 minutes.</p></div>
+ <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
+ <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
 </div>
-<h2 class="reveal">Start small. Prove it in one shop.</h2>
-<div class="pgrid">
-<ol class="steps reveal">
-<li><b>Start with one division</b>Pick Streets, Parks or another group and run a free 60 to 90 day pilot on real units before anyone commits fleet-wide.</li>
-<li><b>Bring your spreadsheets</b>Asset lists, meters and PM intervals import from the spreadsheets you already keep.</li>
-<li><b>Quick Mechanic training</b>Screens are built for the phone in the bay, so Mechanics are working orders on day one.</li>
-<li><b>Grow when it works</b>Add divisions once the pilot shows results your team trusts.</li>
-</ol>
-<div class="phones reveal"><img src="img/dvir-mobile.webp" width="520" height="1173" alt="Mobile DVIR checklist (sample data)" loading="lazy"><img src="img/tech-entry-mobile.webp" width="520" height="1173" alt="Tech Entry time clock on a phone (sample data)" loading="lazy"><p class="cap2">Mobile DVIR and Tech Entry, sample data</p></div>
-</div></div></section>
+<div class="ctas center reveal"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div>
+</div></section>
 
 <section class="itp" id="it"><div class="w">
-<div class="eyebrow reveal">For IT &amp; Procurement</div><h2 class="reveal">Answers before you have to ask.</h2>
+<div class="eyebrow reveal">For IT &amp; Procurement</div><h2 class="reveal">The short answers.</h2>
 <div class="cards six">
  <div class="card reveal"><h3>Hosted in the U.S.</h3><p>Your fleet data is stored on servers in the United States.</p></div>
  <div class="card reveal"><h3>Daily backups</h3><p>Data is backed up every day.</p></div>
  <div class="card reveal"><h3>Secure sign-in</h3><p>Individual user accounts with role-based access for Mechanics, Supervisors, Fleet Managers and Directors.</p></div>
  <div class="card reveal"><h3>Your data stays yours</h3><p>Export your records anytime, in standard formats.</p></div>
  <div class="card reveal"><h3>Accessible design</h3><p>Readable contrast, keyboard-friendly controls and screens that work on phones.</p></div>
- <div class="card reveal"><h3>Simple buying path</h3><p>Start with a free pilot, then move to an annual subscription with Civic Fleet Services.</p></div>
 </div>
-<p class="price reveal"><b>Simple per-unit annual pricing.</b> Free 60 to 90 day pilot for your city.</p>
 </div></section>
 
-<section class="about" id="about"><div class="w">
-<div class="eyebrow reveal">About</div><h2 class="reveal">Who's behind it.</h2>
+<section class="about" id="contact"><div class="w">
+<div class="eyebrow reveal">About &amp; contact</div><h2 class="reveal">Who's behind it.</h2>
 <div class="agrid reveal">
 <img class="ph" src="img/dan-yates.jpg" width="220" height="220" alt="Dan Yates" loading="lazy">
 <div><h3>Dan Yates</h3><p class="role">Fleet Manager &middot; Founder, <span data-name>Civic Fleet Services LLC</span></p>
-<p>A Fleet Manager who came up as a Mechanic. Dan built the FMIS around how city shops actually work, from the bay to the budget meeting.</p>
+<p>Came up as a Mechanic, supervised commuter rail vehicle maintenance, and has served as a Fleet Manager for city and fire department fleets. Advice that respects both the budget and the bay.</p>
 <ul>
 <li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
-<li><b>How cities buy:</b> start with a free pilot, then move to an annual subscription. W-9 available on request.</li>
+<li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
 <!-- TODO(Dan): confirm insurance before publishing. If confirmed, add: <li>Certificate of insurance available on request.</li> -->
-<li><a href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a></li>
-</ul></div></div>
-</div></section>
-
-<section class="contact" id="contact"><div class="w reveal">
-<div class="eyebrow" style="color:var(--amber)">Contact</div><h2>Let's talk about your fleet.</h2>
-<p>Tell us what you run and where it hurts. You'll get a straight answer from someone who's worked the shop floor and presented to city councils.</p>
-<div class="ctas center"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a></div>
-<a class="mail" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a>
+</ul>
+<div class="ctas"><a class="cta" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost dk" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a><a class="ghost dk" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a></div>
+</div></div>
 </div></section>
 <dialog id="demo" aria-labelledby="demo-h"><div role="status">
 <button type="button" class="x" aria-label="Close">&times;</button>
@@ -315,11 +269,12 @@ document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
 dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
 dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
 const $=id=>document.getElementById(id),arc=$('arc');
+if(arc){
 const calc=()=>{const a=+$('age').value,m=+$('mi').value,r=+$('rc').value,c=+$('cpm').value,d=+$('dn').value;
 $('o-age').textContent=a+' yrs';$('o-mi').textContent=m.toLocaleString();$('o-rc').textContent=r+'%';$('o-cpm').textContent=c+'%';$('o-dn').textContent=d+' days';
 const cl=v=>Math.max(0,Math.min(1,v));
 const s=Math.round(100*(.25*cl(a/12)+.2*cl(m/150000)+.25*cl(r/100)+.15*cl((c-80)/80)+.15*cl(d/30)));
 $('sc').textContent=s;arc.setAttribute('stroke-dasharray',s+' 100');
 $('st').textContent=s>=70?'Replace soon':s>=45?'Plan for it':'Keep'};
-['age','mi','rc','cpm','dn'].forEach(id=>$(id).addEventListener('input',calc));calc();
+['age','mi','rc','cpm','dn'].forEach(id=>$(id).addEventListener('input',calc));calc();}
 </script></body></html>
