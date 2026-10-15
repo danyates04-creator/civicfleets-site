@@ -10,7 +10,9 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
 .w{max-width:1120px;margin:0 auto;padding:0 1.25rem}
-nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:1.1rem 0}
+.ib{position:sticky;top:0;z-index:30;height:2.6rem;display:flex;align-items:center;justify-content:center;background:#ffb627;color:#0d1620;font-weight:800;text-decoration:none;font-size:.95rem;padding:0 1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 10px #0006}.ib:hover,.ib:focus-visible{background:#ffc94d;text-decoration:underline}html{scroll-padding-top:3.2rem}
+@media (max-width:520px){.ib{font-size:.82rem;height:2.4rem}}
+nav{position:absolute;top:2.6rem;left:0;right:0;z-index:5;padding:1.1rem 0}
 nav .w{display:flex;justify-content:space-between;align-items:center}
 .brand{color:#fff;font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:1rem}
 .brand b{color:var(--amber)}
@@ -121,7 +123,7 @@ dialog#demo::backdrop{background:#05090dcc}
 .hgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:2.5rem;align-items:center}
 h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem;max-width:22ch}
 .ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.4rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
-.ctas.center{justify-content:center}.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.ctas.center{justify-content:center}.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.hero .start small{color:#ffd27a;font-size:.92rem;font-weight:800;margin-top:.35rem}.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ctas .ghost{margin:0;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
 .hshot{margin:0}.hshot img{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#fff;display:block}
 .hshot figcaption{font-size:.8rem;color:#a3b4c4;margin-top:.5rem;text-align:right}
 .also{margin-top:1.2rem;color:#43515f}
@@ -142,7 +144,9 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 @media (max-width:860px){.about .agrid{grid-template-columns:1fr}}
 .about .ctas .ghost.dk{color:var(--ink)}.price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
+@media (max-width:520px){nav{top:2.4rem}}
 </style></head><body>
+<a class="ib" href="https://app.civicfleets.com/signup">Have an invite code? Start your 7-Day Trial &rarr;</a>
 <div class="prog" aria-hidden="true"></div>
 <nav><div class="w"><div class="brand">Civic Fleet Services</div><a class="mini" href="#contact">Contact</a></div></nav>
 
