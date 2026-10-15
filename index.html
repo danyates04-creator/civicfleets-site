@@ -135,6 +135,10 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 .cap2{width:100%;text-align:center;font-size:.85rem;color:#43515f;margin:.2rem 0 0}
 .itp{background:linear-gradient(135deg,#fff,#e9eef4)}.six{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:0 0 2.2rem}.ways .card b{display:block;font-size:1.15rem;margin-bottom:.3rem}.ways .card p{margin:0}.pd{display:inline-flex;align-items:center;gap:.8rem;flex-wrap:wrap}button.tl{background:none;border:0;padding:0;font:inherit;font-size:.9rem;color:#a3b4c4;text-decoration:underline;cursor:pointer}button.tl:hover{color:#fff}button.ghost{background:none;border:0;font:inherit;cursor:pointer;padding:0}
+.live{display:inline-flex;align-items:center;gap:.5rem;margin:1.6rem 0 .6rem;padding:.35rem .9rem;border-radius:999px;background:#1f8a4c22;border:1px solid #3ccf7a88;color:#7ff0ad;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}.live small{color:#c9d6e2;font-weight:600;letter-spacing:0;text-transform:none;font-size:.85rem}.livedot{width:.6rem;height:.6rem;border-radius:50%;background:#3ccf7a;box-shadow:0 0 0 4px #3ccf7a33}
+.vid{margin:2.2rem 0 0}.vid video{width:100%;height:auto;border-radius:14px;border:1px solid #ffffff22;box-shadow:0 30px 70px #000a;background:#0d1620;display:block}.vid figcaption{font-size:.85rem;color:#a3b4c4;margin-top:.5rem}.vid h3{margin:0 0 .6rem;font-size:1.4rem}
+.about .agrid{display:grid;grid-template-columns:220px 1fr;gap:2.2rem;align-items:center;margin-top:1.4rem}.about .ph{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 14px 34px #0d162033}.about .phx{display:grid;place-items:center;text-align:center;background:#dfe6ee;color:#43515f;font-weight:700;font-size:.85rem;border:3px dashed #9fb2c4}.about h3{margin:0;font-size:1.5rem}.about .role{color:#b3261e;font-weight:800;margin:.2rem 0 .8rem}.about ul{margin:.8rem 0 0;padding-left:1.1rem;color:#43515f}.about li{margin:.35rem 0}
+@media (max-width:860px){.about .agrid{grid-template-columns:1fr}}
 .price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
 </style></head><body>
@@ -183,6 +187,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  <div class="cap"><b>Miles + days</b><span>PM intervals, next due, status</span></div>
  <div class="cap"><b>Defect &rarr; WO</b><span>safety defect opens a WO right away</span></div>
 </div>
+<div class="live reveal"><span class="livedot" aria-hidden="true"></span>Live today <small>in the working FMIS, not a mockup</small></div>
 <div class="tour reveal">
  <div class="tabs" role="tablist" aria-label="FMIS tour">
   <button role="tab" aria-selected="true">Dashboard</button>
@@ -202,6 +207,9 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  </div>
  <div class="tnav"><button class="arr" data-d="-1" aria-label="Previous screen">&larr;</button><div class="dots" aria-hidden="true"></div><button class="arr" data-d="1" aria-label="Next screen">&rarr;</button></div>
 </div>
+<figure class="vid reveal" id="walkthrough"><h3>Watch a 75-second walkthrough</h3>
+<video controls muted playsinline preload="none" poster="img/walkthrough-poster.jpg" width="1280" height="800"><source src="video/walkthrough.mp4" type="video/mp4">Your browser can't play this video.</video>
+<figcaption>Silent screen capture: dashboard, work orders, a work order, PM due list, unit file, driver inspection, Tech Entry and reports. Sample Demo Valley data.</figcaption></figure>
 <div class="soon reveal"><div class="eyebrow" style="color:var(--amber)">Coming soon</div><ul>
 <li><b>Vehicle purchase, build and order tracker</b>Follow every new unit from quote and PO through build, delivery and upfit to in service.</li>
 <li><b>In-app messaging from the work order</b>Parts to Mechanic (your parts are in), Admin to Mechanic, Supervisor to Mechanic, and Mechanic to Parts, all tied to the work order. Email or text alerts optional.</li>
@@ -250,6 +258,21 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  <div class="card reveal"><h3>Simple buying path</h3><p>Start with a free pilot, then move to an annual subscription with Civic Fleet Services.</p></div>
 </div>
 <p class="price reveal"><b>Simple per-unit annual pricing.</b> Free 60 to 90 day pilot for your city.</p>
+</div></section>
+
+<section class="about" id="about"><div class="w">
+<div class="eyebrow reveal">About</div><h2 class="reveal">Who's behind it.</h2>
+<div class="agrid reveal">
+<!-- TODO(Dan): swap placeholder for photo from LinkedIn (save as img/dan-yates.jpg, then use <img class="ph" src="img/dan-yates.jpg" alt="Dan Yates">) -->
+<div class="ph phx" role="img" aria-label="Photo of Dan Yates coming soon">PHOTO PLACEHOLDER<br>Dan Yates</div>
+<div><h3>Dan Yates</h3><p class="role">Fleet Manager &middot; Founder, <span data-name>Civic Fleet Services LLC</span></p>
+<p>A Fleet Manager who came up as a Mechanic. Dan built the FMIS around how city shops actually work, from the bay to the budget meeting.</p>
+<ul>
+<li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
+<li><b>How cities buy:</b> start with a free pilot, then move to an annual subscription. W-9 available on request.</li>
+<!-- TODO(Dan): confirm insurance before publishing. If confirmed, add: <li>Certificate of insurance available on request.</li> -->
+<li><a href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a></li>
+</ul></div></div>
 </div></section>
 
 <section class="contact" id="contact"><div class="w reveal">
