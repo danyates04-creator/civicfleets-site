@@ -1,5 +1,3 @@
-diff --git a/index.html b/index.html
-index 1ef375d..81d4e6a 100644
 --- a/index.html
 +++ b/index.html
 @@ -1,4 +1,4 @@
@@ -8,7 +6,7 @@ index 1ef375d..81d4e6a 100644
  <title>Civic Fleet Services LLC | Fleet Consulting</title>
  <meta name="description" content="Civic Fleet Services LLC: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
  <meta property="og:title" content="Civic Fleet Services LLC | Fleet Consulting">
-@@ -164,25 +164,17 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
+@@ -164,25 +164,17 @@
  .dn a.on i{background:var(--amber);transform:scale(1.35)}
  @media (max-width:900px){.dn{display:none}}
  .pilot .ctas .ghost{color:var(--ink)}.pilot .start small{color:#43515f}.pilot button.tl{color:#43515f}.pilot button.tl:hover{color:var(--ink)}
@@ -31,12 +29,12 @@ index 1ef375d..81d4e6a 100644
  <div class="hgrid"><div>
  <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
  <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
--<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><span class="ghost pl-off" aria-disabled="true" title="Available at launch">Talk to Dan</span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
-+<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
+-<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
++<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span></div>
  </div>
  <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
  </div></div>
-@@ -237,7 +229,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
+@@ -238,7 +230,7 @@
   <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
   <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
  </div>
@@ -45,9 +43,9 @@ index 1ef375d..81d4e6a 100644
  </div></section>
  
  <section class="itp" id="it"><div class="w">
-@@ -262,10 +254,19 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
+@@ -262,10 +254,19 @@
+ <li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
  <li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
- <!-- TODO(Dan): confirm insurance before publishing. If confirmed, add: <li>Certificate of insurance available on request.</li> -->
  </ul>
 -<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Talk to Dan</button><small class="pl-note">Available at launch</small></span></div>
 +<div class="ctas"><a class="cta" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost dk" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a><a class="ghost dk" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a></div>
@@ -66,7 +64,7 @@ index 1ef375d..81d4e6a 100644
  <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
  
  <script>
-@@ -288,6 +289,19 @@ tabs.forEach((t,j)=>{t.onclick=()=>{stop();go(j)};t.onkeydown=e=>{if(e.key=='Arr
+@@ -288,6 +289,19 @@
  document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
  let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
  go(0);
