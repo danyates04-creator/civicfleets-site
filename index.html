@@ -104,7 +104,7 @@ h1.tag{font-size:clamp(1.6rem,3.6vw,2.6rem);max-width:none}
 .subline{font-size:clamp(1.1rem,2.2vw,1.45rem);font-weight:700;color:#fff;margin:.2rem 0 .6rem}
 
 
-button.ghost{background:none;border:0;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.pd{display:inline-flex;align-items:center;gap:.8rem;flex-wrap:wrap}button.tl{background:none;border:0;padding:0;font:inherit;font-size:.9rem;color:#a3b4c4;text-decoration:underline;cursor:pointer}button.tl:hover{color:#fff}button.ghost{background:none;border:0;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
 .demo-cta{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;align-items:center;justify-content:space-between;margin:2rem 0 0;padding:1.2rem 1.4rem;border-radius:16px;background:linear-gradient(90deg,#ffb62722,#e8443a22);border:1px solid #ffb62766}
 .demo-cta b{display:block;font-size:1.3rem}.demo-cta span{color:#d5e0ea}.demo-cta .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
 dialog#demo{border:0;border-radius:18px;padding:1.8rem;width:min(440px,92vw);background:#0d1620;color:#fff;box-shadow:0 30px 80px #000c}
@@ -134,7 +134,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 .phones{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}.phones img{width:44%;max-width:230px;height:auto;border-radius:22px;border:6px solid #223447;box-shadow:0 20px 40px #0d162033}
 .cap2{width:100%;text-align:center;font-size:.85rem;color:#43515f;margin:.2rem 0 0}
 .itp{background:linear-gradient(135deg,#fff,#e9eef4)}.six{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:0 0 2.2rem}.ways .card b{display:block;font-size:1.15rem;margin-bottom:.3rem}.ways .card p{margin:0}button.ghost{background:none;border:0;font:inherit;cursor:pointer;padding:0}
+.ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:0 0 2.2rem}.ways .card b{display:block;font-size:1.15rem;margin-bottom:.3rem}.ways .card p{margin:0}.pd{display:inline-flex;align-items:center;gap:.8rem;flex-wrap:wrap}button.tl{background:none;border:0;padding:0;font:inherit;font-size:.9rem;color:#a3b4c4;text-decoration:underline;cursor:pointer}button.tl:hover{color:#fff}button.ghost{background:none;border:0;font:inherit;cursor:pointer;padding:0}
 .price{margin-top:2rem;font-size:1.15rem;text-align:center}
 @media (max-width:860px){.hgrid,.pgrid{grid-template-columns:1fr}}
 </style></head><body>
@@ -146,7 +146,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <div class="hgrid"><div>
 <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
 <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
-<div class="ctas"><button type="button" class="cta demo-open">Book a demo &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
+<div class="ctas"><span class="start"><a class="cta" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>Have an invite code?</small></span><a class="ghost" href="#contact">Talk to Dan</a></div>
 </div>
 <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
 </div></div>
@@ -208,7 +208,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <li><b>Surplus to auction tracker</b>Move units from surplus to decommissioned to auction, with aging alerts, police data-wipe checklist, and expected vs actual sale price.</li>
 <li><b>AI-assisted FMIS</b>AI built into the work order: suggested repair steps, the 3 C's written from a Mechanic's quick notes, and plain-English answers to fleet questions.</li>
 </ul></div>
-<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><button type="button" class="cta demo-open">Book a demo &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><button type="button" class="ghost demo-open">Free pilot for your city</button></div></div>
+<div class="ctarow reveal"><div><b>See it on your own screen.</b><span>7 days with the full FMIS and sample Demo Valley data.</span></div><div class="ctas"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div></div>
 <div class="calc reveal" id="score">
  <div><div class="eyebrow" style="color:var(--amber)">Try it</div><h3>Replacement score, sample unit</h3><p class="sub">Move the sliders to see how a unit's score changes. Sample weights for illustration; real scoring uses each fleet's own data and class averages.</p>
  <label>Age <output id="o-age"></output><input type="range" id="age" min="0" max="20" value="9"></label>
@@ -224,9 +224,9 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <section class="pilot" id="pilot"><div class="w">
 <div class="eyebrow reveal">Demo, trial or pilot</div><h2 class="reveal">Three ways to see if it fits.</h2>
 <div class="ways cards">
- <div class="card reveal"><b>Book a demo</b><p>A live walkthrough with Dan. You ask questions, he shows the screens that matter to your shop. About 30 minutes.</p></div>
  <div class="card reveal"><b>Start 7-Day Trial</b><p>Try the full FMIS on your own for 7 days, using sample Demo Valley data. Needs an invite code.</p></div>
  <div class="card reveal"><b>Free pilot for your city</b><p>Run part of your real fleet on the FMIS, free, for 60 to 90 days before you buy anything.</p></div>
+ <div class="card reveal"><b>Book a demo</b><p>A live walkthrough with Dan. You ask questions, he shows the screens that matter to your shop. About 30 minutes.</p></div>
 </div>
 <h2 class="reveal">Start small. Prove it in one shop.</h2>
 <div class="pgrid">
@@ -255,7 +255,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <section class="contact" id="contact"><div class="w reveal">
 <div class="eyebrow" style="color:var(--amber)">Contact</div><h2>Let's talk about your fleet.</h2>
 <p>Tell us what you run and where it hurts. You'll get a straight answer from someone who's worked the shop floor and presented to city councils.</p>
-<div class="ctas center"><button type="button" class="cta demo-open">Book a demo &rarr;</button><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><button type="button" class="ghost demo-open">Free pilot for your city</button><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a></div>
+<div class="ctas center"><span class="start"><a class="ghost" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>Have an invite code?</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span><a class="ghost" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a></div>
 <a class="mail" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a>
 </div></section>
 <dialog id="demo" aria-labelledby="demo-h"><div role="status">
