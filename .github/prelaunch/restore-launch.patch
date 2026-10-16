@@ -3,9 +3,9 @@
 @@ -1,4 +1,4 @@
 -<!doctype html><html lang="en" data-prelaunch><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 +<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
- <title>Civic Fleet Services LLC | Fleet Consulting</title>
- <meta name="description" content="Civic Fleet Services LLC: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
- <meta property="og:title" content="Civic Fleet Services LLC | Fleet Consulting">
+ <title>Civic Fleet Services | Fleet Consulting</title>
+ <meta name="description" content="Civic Fleet Services: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
+ <meta property="og:title" content="Civic Fleet Services | Fleet Consulting">
 @@ -157,26 +157,17 @@
  .dn a.on i{background:var(--amber);transform:scale(1.35)}
  @media (max-width:900px){.dn{display:none}}
@@ -52,7 +52,7 @@
  <section class="itp" id="it"><div class="w">
 @@ -251,10 +243,23 @@
  <img class="ph" src="img/dan-yates.jpg" width="220" height="220" alt="Dan Yates" loading="lazy">
- <div><h3>Dan Yates</h3><p class="role">Founder &amp; Fleet Consultant, <span data-name>Civic Fleet Services LLC</span></p>
+ <div><h3>Dan Yates</h3><p class="role">Founder &amp; Fleet Consultant, <span data-name>Civic Fleet Services</span></p>
  <p>Dan came up as a dealership Mechanic and has spent 20+ years in fleet, from public works and fire departments to commuter rail and transportation. He has run fleet budgets with P&amp;L responsibility, written vehicle specs, led bids and served on bid committees.</p>
 -<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Talk to Dan</button><small class="pl-note">Available at launch</small></span></div>
 +<ul>
@@ -72,7 +72,7 @@
 +<h3 id="trial-h">Site under construction</h3><p>The 7-Day Trial is by invitation only for now. Got an invite email? Continue to sign up with your invite code.</p>
 +<a class="cta" href="https://app.civicfleets.com/signup">I have an invite code &rarr;</a>
 +<button type="button" class="tclose">Close</button></div></dialog>
- <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
+ <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
  
  <script>
 @@ -277,6 +282,19 @@
