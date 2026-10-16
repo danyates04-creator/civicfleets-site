@@ -45,7 +45,7 @@
   <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
 + <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
  </div>
--<div class="ctas center reveal"><span class="start"><button type="button" class="ghost pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><span class="pd"><button type="button" class="tl pl-off" aria-disabled="true" title="Available at launch">or book a demo</button></span></div>
+-<div class="ctas center reveal"><span class="start"><button type="button" class="ghost pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><span class="pd"><button type="button" class="tl pl-off" aria-disabled="true" title="Available at launch">Book a demo</button></span></div>
 +<div class="ctas center reveal"><span class="start"><a class="ghost trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>By invitation for now</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div>
  </div></section>
  
