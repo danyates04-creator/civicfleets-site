@@ -31,7 +31,7 @@ index c8900ac..fec79c0 100644
  <div class="wm"><img class="wm-logo" src="img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></div>
  <div class="hgrid"><div>
  <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
- <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
+ <p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager.</p>
 -<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
 +<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span></div>
  </div>
