@@ -50,13 +50,15 @@
  </div></section>
  
  <section class="itp" id="it"><div class="w">
-@@ -253,11 +245,21 @@
+@@ -251,10 +243,23 @@
+ <img class="ph" src="img/dan-yates.jpg" width="220" height="220" alt="Dan Yates" loading="lazy">
+ <div><h3>Dan Yates</h3><p class="role">Founder &amp; Fleet Consultant, <span data-name>Civic Fleet Services LLC</span></p>
  <p>Dan came up as a dealership Mechanic and has spent 20+ years in fleet, from public works and fire departments to commuter rail and transportation. He has run fleet budgets with P&amp;L responsibility, written vehicle specs, led bids and served on bid committees.</p>
- <ul>
- <li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
-+<li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
- </ul>
 -<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Talk to Dan</button><small class="pl-note">Available at launch</small></span></div>
++<ul>
++<li><b>Company:</b> <span data-name>Civic Fleet Services LLC</span>, a Utah company.</li>
++<li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
++</ul>
 +<div class="ctas"><a class="cta" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost dk" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a><a class="ghost dk" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a></div>
  </div></div>
  </div></section>
@@ -73,7 +75,7 @@
  <footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services LLC</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
  
  <script>
-@@ -280,6 +282,19 @@
+@@ -277,6 +282,19 @@
  document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
  let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
  go(0);
