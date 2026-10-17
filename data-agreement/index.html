@@ -22,7 +22,7 @@ footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-si
 <ol>
 <li><strong>City owns its data.</strong> All data the City or its users put into the Service, and all reports created from it ("City Data"), belong to the City.</li>
 <li><strong>Civic Fleet Services owns the software.</strong> Civic Fleet Services LLC owns the Service and all intellectual property in it. The City gets a right to use the Service during the term. No ownership of the software transfers to the City.</li>
-<li><strong>Limited use.</strong> Civic Fleet Services uses City Data only to provide, support, secure, and back up the Service for the City, or as the law requires. It doesn't sell City Data, share it with other customers, or use it to train outside AI models. Any outside AI provider needs the City's prior written agreement.</li>
+<li><strong>Limited use.</strong> Civic Fleet Services uses City Data only to provide, support, secure, and back up the Service for the City, or as the law requires. It doesn't sell City Data, share it with other customers, or use it to train AI models, and it doesn't let its providers use City Data to train their models. City Data goes to an outside AI provider only if the City consents. The City's Admin turning on an AI feature in the Service counts as that consent for the provider and data described in Section 3.4.</li>
 </ol>
 <h2>2. Term and funding</h2>
 <ol>
@@ -35,6 +35,15 @@ footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-si
 <li>Civic Fleet Services will keep reasonable administrative, technical, and physical safeguards for City Data, as described in its current security policies (attached or linked). It won't materially reduce those safeguards during the term.</li>
 <li><strong>Hosting:</strong> United States only (currently DigitalOcean). Each City's data is kept separate from other customers' data. <strong>[Attorney/Dan: confirm the current state of uploaded-file storage and backups before signing.]</strong></li>
 <li>Subprocessors: Civic Fleet Services will keep a current list and give the City notice before adding one that will process City Data.</li>
+<li><strong>Optional AI repair-note drafting.</strong> This is off unless the City's Admin turns it on, and the Admin can turn it off at any time. Every change is logged.<ul>
+<li><strong>What's sent:</strong> when it's on, the mechanic's repair story, the work order complaint, the unit type or class, and repair-code tables go to xAI (Grok API), using its U.S. endpoint only, so it can draft complaint, cause and correction text and a suggested system code. Names, email addresses and phone numbers are removed automatically first.</li>
+<li><strong>What's never sent:</strong> the City's name, unit numbers, VINs, plates, and user names.</li>
+<li><strong>The mechanic decides:</strong> the AI draft becomes work order text only after the mechanic reviews and accepts it, and the mechanic's original text is always kept. The City is responsible for what its users accept.</li>
+<li><strong>Training and retention:</strong> xAI doesn't use this data for training. Zero Data Retention is on, so xAI doesn't store it and deletes it within one hour. If Zero Data Retention is ever unavailable, Civic Fleet Services turns the feature off until it's back on.</li>
+<li><strong>When it's off:</strong> nothing is sent to xAI.</li>
+<li><strong>New providers:</strong> Civic Fleet Services will give the City 30 days' notice before switching to, or adding, an AI provider.</li>
+</ul>
+</li>
 </ol>
 <h2>4. Security incidents</h2>
 <ol>
