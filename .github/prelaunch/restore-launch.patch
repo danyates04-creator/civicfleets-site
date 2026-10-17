@@ -35,7 +35,7 @@ index c8900ac..fec79c0 100644
 -<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
 +<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span></div>
  </div>
- <figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
+ <figure class="hshot"><img src="img/fmis-dashboard-canyon.webp" width="1366" height="865" alt="Supervisor dashboard listing work orders to assign and completed work orders to review (demo data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
  </div></div>
 @@ -228,11 +219,12 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  </ul></div>
