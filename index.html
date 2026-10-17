@@ -1,8 +1,8 @@
-<!doctype html><html lang="en" data-prelaunch><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0D1620"><link rel="canonical" href="https://civicfleets.com/">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0D1620"><link rel="canonical" href="https://civicfleets.com/">
 <title>Civic Fleet Services | Fleet Consulting</title>
 <meta name="description" content="Civic Fleet Services: fleet maintenance software and consulting for city and public fleets, built by a Fleet Manager. Utah-based.">
 <meta property="og:title" content="Civic Fleet Services | Fleet Consulting">
-<meta property="og:description" content="Fleet maintenance software and consulting for city and public fleets, from a Fleet Manager who came up as a Mechanic.">
+<meta property="og:description" content="Fleet maintenance software and consulting for city and public fleets, from a Fleet Manager.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Civic Fleet Services">
 <meta property="og:image" content="https://civicfleets.com/img/brand/share-1200x630.png">
@@ -56,6 +56,7 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:.3rem 0 1rem;font-weight:900;letter
 .contact{background:radial-gradient(700px 300px at 80% 0%,#2b5d8a,transparent 70%),var(--ink);color:#fff;text-align:center}
 .contact p{color:#c9d6e2;max-width:46ch;margin:0 auto 1.2rem}
 .mail{display:inline-block;font-size:clamp(1.1rem,3.4vw,1.8rem);font-weight:800;color:var(--amber);text-decoration:none;border-bottom:2px solid #E3CD8C80;margin-top:.6rem;word-break:break-all}
+.demo-note{margin:.8rem 0 0;font-size:.85rem;color:#a3b4c4}.demo-note.center{text-align:center}.pilot .demo-note{color:#43515f}
 footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-size:.85rem}
 .reveal{opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease}
 .reveal.in{opacity:1;transform:none}
@@ -158,28 +159,20 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 .dn a.on i{background:var(--amber);transform:scale(1.35)}
 @media (max-width:900px){.dn{display:none}}
 .pilot .ctas .ghost{color:var(--ink)}.pilot .start small{color:#43515f}.pilot button.tl{color:#43515f}.pilot button.tl:hover{color:var(--ink)}
-/* PRELAUNCH: banner + disabled controls. Active only while <html data-prelaunch> is set. */
-.pl-bar{display:none}
-[data-prelaunch] .pl-bar{display:block;position:relative;z-index:30;height:2rem;line-height:2rem;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.06em;background:var(--amber);color:#0D1620}
-[data-prelaunch] nav{top:2rem}nav span.mini{color:#fff}
-[data-prelaunch] .pl-off{opacity:.45;cursor:not-allowed;filter:grayscale(1);box-shadow:none;transform:none!important}
-.pilot .eyebrow{margin-bottom:1rem}
-.pl-note{display:block;color:#a3b4c4;font-size:.78rem;margin-top:.2rem}.pilot .pl-note,.about .pl-note{color:#43515f}
-.pl-inv{color:var(--amber);font-weight:700;font-size:.9rem}.pilot .pl-inv,.about .pl-inv{color:#7A6420}
 </style></head><body>
-<div class="pl-bar" role="status">Coming soon</div>
 <div class="prog" aria-hidden="true"></div>
 <div class="dn" role="navigation" aria-label="Sections"><a href="#services"><span>Services</span><i></i></a><a href="#fmis"><span>Software</span><i></i></a><a href="#pilot"><span>Try it</span><i></i></a><a href="#it"><span>IT &amp; Procurement</span><i></i></a><a href="#contact"><span>Who's behind it</span><i></i></a></div>
-<nav><div class="w"><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><span class="mini pl-off" aria-disabled="true" title="Available at launch">Contact</span></span></div></nav>
+<nav><div class="w"><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><a class="mini" href="#contact">Contact</a></span></div></nav>
 
 <header class="hero"><div class="w">
 <div class="wm"><img class="wm-logo" src="img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></div>
 <div class="hgrid"><div>
 <h1 class="tag">Fleet maintenance software and consulting for city and public fleets.</h1>
-<p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager who came up as a Mechanic.</p>
-<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
+<p class="lead">Work order, PM, DVIR and replacement-planning software, plus hands-on consulting, from a Fleet Manager.</p>
+<div class="ctas"><span class="start"><a class="cta trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial &rarr;</a><small>By invitation for now</small></span></div>
+<p class="demo-note">Demo data only. Real data needs a signed agreement.</p>
 </div>
-<figure class="hshot"><img src="img/supervisor-dashboard.webp" width="1200" height="833" alt="FMIS supervisor dashboard showing open work orders, overdue PMs and assets down (sample Demo Valley data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
+<figure class="hshot"><img src="img/fmis-dashboard-canyon.webp" width="1366" height="865" alt="Supervisor dashboard listing work orders to assign and completed work orders to review (demo data)" fetchpriority="high"><figcaption>FMIS supervisor dashboard, sample data</figcaption></figure>
 </div></div>
 </header>
 
@@ -210,7 +203,7 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
  </div>
  <div class="panes">
   <div class="pane on" role="tabpanel" id="walkthrough"><div class="pshot vid"><video id="tourvid" controls muted playsinline preload="none" poster="img/walkthrough-poster.jpg" width="1280" height="800"><source src="video/walkthrough.mp4" type="video/mp4">Your browser can't play this video.</video></div><div class="ptxt"><h3>75-second walkthrough</h3><ul><li>Dashboard, work orders and a full work order</li><li>PM due list, unit file and driver inspection</li><li>Tech Entry and reports</li></ul><p class="vs">Silent screen capture, sample Demo Valley data.</p><button type="button" class="vx" aria-label="Expand video">&#x26F6; Expand</button></div></div>
-  <div class="pane" role="tabpanel"><div class="pshot"><img src="img/supervisor-dashboard.webp" alt="Supervisor dashboard (demo data)" loading="lazy"></div><div class="ptxt"><h3>Supervisor dashboard</h3><ul><li>Open WOs, unassigned work, overdue PMs and assets down on one screen</li><li>Wrench time and shop efficiency at a glance</li><li>One-click views for Mechanic, Supervisor, Fleet Manager and Director</li></ul><p class="vs">Many fleet systems take several reports to show this.</p></div></div>
+  <div class="pane" role="tabpanel"><div class="pshot"><img src="img/fmis-dashboard-canyon.webp" width="1366" height="865" alt="Supervisor dashboard listing work orders to assign and completed work orders to review (demo data)" loading="lazy"></div><div class="ptxt"><h3>Supervisor dashboard</h3><ul><li>Open WOs, unassigned work, overdue PMs and assets down on one screen</li><li>Wrench time and shop efficiency at a glance</li><li>One-click views for Mechanic, Supervisor, Fleet Manager and Director</li></ul><p class="vs">Many fleet systems take several reports to show this.</p></div></div>
   <div class="pane" role="tabpanel"><div class="pshot"><img src="img/replacement-budget.webp" alt="Replacement budget planning (demo data)" loading="lazy"></div><div class="ptxt"><h3>Replacement scoring and budget</h3><ul><li>Every unit scored 0 to 100 from data already in the system</li><li>Age, miles/hours, lifetime repair cost, cost per mile vs. class, downtime</li><li>Budgets roll up by planned year and by class, with an inflation estimate</li></ul><p class="vs">Replacement planning often lives in a separate spreadsheet. Here it comes from the maintenance data.</p></div></div>
   <div class="pane" role="tabpanel"><div class="pshot"><img src="img/asset-pm-schedules.webp" alt="PM schedules in the asset file (demo data)" loading="lazy"></div><div class="ptxt"><h3>PMs in the asset file</h3><ul><li>Intervals by miles and by days</li><li>Last done, next due and status for each schedule</li><li>Sits next to the unit's WOs, current meter and downtime</li></ul><p class="vs">No hunting through a separate module to see what's due.</p></div></div>
   <div class="pane" role="tabpanel"><div class="pshot"><img src="img/printed-wo.webp" alt="Invoice-style printed work order (demo data)" loading="lazy"></div><div class="ptxt"><h3>Work orders that print like an invoice</h3><ul><li>Asset, VIN, department, priority, meter and tech in the header</li><li>Complaint, Cause, Correction and the PM checklist</li><li>Totals and signature lines</li></ul><p class="vs">A clean shop document, not a screen dump.</p></div></div>
@@ -228,11 +221,13 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 </ul></div>
 </div></section>
 <section class="pilot" id="pilot"><div class="w">
-<div class="eyebrow reveal">Try it</div>
+<div class="eyebrow reveal">Try it</div><h2 class="reveal">Two ways to see if it fits.</h2>
 <div class="ways cards">
  <div class="card reveal"><b>Start 7-Day Trial</b><p>Use the full FMIS on your own with sample data. Needs an invite code.</p></div>
+ <div class="card reveal"><b>Free pilot for your city</b><p>Run one division, like Streets or Parks, on your real units free for 60 to 90 days. Bring your spreadsheets; Mechanics are working orders on day one. Then move to a per-unit annual subscription.</p></div>
 </div>
-<div class="ctas center reveal"><span class="start"><button type="button" class="ghost pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><span class="pd"><button type="button" class="tl pl-off" aria-disabled="true" title="Available at launch">Book a demo</button></span></div>
+<div class="ctas center reveal"><span class="start"><a class="ghost trial-open" href="https://app.civicfleets.com/signup">Start 7-Day Trial</a><small>By invitation for now</small></span><span class="pd"><button type="button" class="cta demo-open">Free pilot for your city &rarr;</button><button type="button" class="tl demo-open">or book a demo</button></span></div>
+<p class="demo-note center reveal">Demo data only. Real data needs a signed agreement.</p>
 </div></section>
 
 <section class="itp" id="it"><div class="w">
@@ -252,11 +247,24 @@ h1.tag{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12;margin:.6rem 0 1rem
 <img class="ph" src="img/dan-yates.jpg" width="220" height="220" alt="Dan Yates" loading="lazy">
 <div><h3>Dan Yates</h3><p class="role">Founder &amp; Fleet Consultant, <span data-name>Civic Fleet Services</span></p>
 <p>Dan came up as a dealership Mechanic and has spent more than 20 years in fleet, from public works and fire departments to commuter rail and transportation. He has run fleet budgets with P&amp;L responsibility, written vehicle specs and led bids from spec to award.</p>
-<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Talk to Dan</button><small class="pl-note">Available at launch</small></span></div>
+<ul>
+<li><b>Company:</b> <span data-name>Civic Fleet Services</span>, a Utah company.</li>
+<li><b>How cities buy:</b> free pilot, then a per-unit annual subscription. W-9 available on request.</li>
+</ul>
+<div class="ctas"><a class="cta" href="mailto:dyates@civicfleets.com?subject=Fleet%20software%20and%20consulting%20inquiry">Talk to Dan</a><a class="ghost dk" href="https://www.linkedin.com/in/daniel-y-250331118/" target="_blank" rel="noopener">See my background on LinkedIn</a><a class="ghost dk" href="mailto:dyates@civicfleets.com">dyates@civicfleets.com</a><a class="ghost dk" href="tel:+18016315996">(801) 631-5996</a></div>
 </div></div>
 </div></section>
 <dialog id="vbox" aria-label="Walkthrough video"><button type="button" class="x" aria-label="Close">&times;</button><video controls playsinline preload="none" poster="img/walkthrough-poster.jpg" width="1280" height="800"><source src="video/walkthrough.mp4" type="video/mp4"></video></dialog>
-<footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
+<dialog id="demo" aria-labelledby="demo-h"><div role="status">
+<button type="button" class="x" aria-label="Close">&times;</button>
+<h3 id="demo-h">Under construction</h3><p>Be back shortly.</p>
+<button type="button" class="cta x2">Close</button></div></dialog>
+<dialog id="trial" aria-labelledby="trial-h"><div>
+<button type="button" class="x" aria-label="Close">&times;</button>
+<h3 id="trial-h">Site under construction</h3><p>The 7-Day Trial is by invitation only for now. Got an invite email? Continue to sign up with your invite code.</p>
+<a class="cta" href="https://app.civicfleets.com/signup">I have an invite code &rarr;</a>
+<button type="button" class="tclose">Close</button></div></dialog>
+<footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a> &middot; <a href="/terms/" style="color:#a3b4c4">Terms</a> &middot; <a href="https://app.civicfleets.com/privacy" style="color:#a3b4c4">Privacy</a> &middot; <a href="/data-agreement/" style="color:#a3b4c4">Data agreement (on request)</a></footer>
 
 <script>
 const BUSINESS_NAME = "Civic Fleet Services"; // <-- swap the business name here (only place to change)
@@ -278,6 +286,19 @@ tabs.forEach((t,j)=>{t.onclick=()=>{stop();go(j)};t.onkeydown=e=>{if(e.key=='Arr
 document.querySelectorAll('.arr').forEach(b=>b.onclick=()=>{stop();go(cur+ +b.dataset.d)});
 let x0=null;const pw=document.querySelector('.panes');pw.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});pw.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50){stop();go(cur+(dx<0?1:-1))}x0=null});
 go(0);
+// Book a demo + Free pilot: under construction notice until ready.
+const dlg=document.getElementById('demo');
+const openDemo=()=>{if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','')};
+const closeDemo=()=>{if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
+document.querySelectorAll('.demo-open').forEach(b=>b.onclick=openDemo);
+dlg.querySelectorAll('.x,.x2').forEach(b=>b.onclick=closeDemo);
+dlg.addEventListener('click',e=>{if(e.target===dlg)closeDemo()});
+// Start 7-Day Trial: invitation-only notice, then on to sign-up.
+const tdl=document.getElementById('trial');
+const closeT=()=>{if(tdl.close)tdl.close();else tdl.removeAttribute('open')};
+document.querySelectorAll('.trial-open').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();if(tdl.showModal)tdl.showModal();else tdl.setAttribute('open','')}));
+tdl.querySelectorAll('.x,.tclose').forEach(b=>b.onclick=closeT);
+tdl.addEventListener('click',e=>{if(e.target===tdl)closeT()});
 const vb=document.getElementById('vbox'),vbv=vb.querySelector('video'),sv=document.getElementById('tourvid');sv.addEventListener('play',stop);
 const openV=()=>{sv.pause();vbv.currentTime=sv.currentTime||0;vb.showModal?vb.showModal():vb.setAttribute('open','');vbv.play().catch(()=>{})};
 const closeV=()=>{vbv.pause();vb.close?vb.close():vb.removeAttribute('open')};
