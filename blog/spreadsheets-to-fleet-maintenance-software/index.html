@@ -1,0 +1,343 @@
+<!doctype html><html lang="en" data-prelaunch><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0D1620"><link rel="canonical" href="https://civicfleets.com/blog/spreadsheets-to-fleet-maintenance-software/">
+<title>Moving From Spreadsheets to Fleet Maintenance Software: A Guide for Small City Fleets | Civic Fleet Services</title>
+<meta name="description" content="When a small city fleet outgrows Excel, what to move into fleet maintenance software (FMIS), and how to clean unit, meter, PM and history data before you switch.">
+<meta name="author" content="Dan Yates">
+<meta property="og:title" content="Moving From Spreadsheets to Fleet Maintenance Software: A Guide for Small City Fleets">
+<meta property="og:description" content="When a small city fleet outgrows Excel, what to move into fleet maintenance software (FMIS), and how to clean unit, meter, PM and history data before you switch.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://civicfleets.com/blog/spreadsheets-to-fleet-maintenance-software/">
+<meta property="og:site_name" content="Civic Fleet Services">
+<meta property="og:image" content="https://civicfleets.com/img/brand/share-1200x630.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Civic Fleet Services logo">
+<meta property="article:published_time" content="2026-10-17"><meta property="article:modified_time" content="2026-10-17">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://civicfleets.com/img/brand/share-1200x630.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "headline": "Moving From Spreadsheets to Fleet Maintenance Software: A Guide for Small City Fleets",
+   "description": "When a small city fleet outgrows Excel, what to move into fleet maintenance software (FMIS), and how to clean unit, meter, PM and history data before you switch.",
+   "image": "https://civicfleets.com/img/brand/share-1200x630.png",
+   "datePublished": "2026-10-17",
+   "dateModified": "2026-10-17",
+   "author": {
+    "@id": "https://civicfleets.com/#dan"
+   },
+   "publisher": {
+    "@id": "https://civicfleets.com/#org"
+   },
+   "mainEntityOfPage": "https://civicfleets.com/blog/spreadsheets-to-fleet-maintenance-software/"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Excel good enough for a small city fleet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For a very small fleet with one person who keeps it current, it can work. Once PMs are being missed, costs can't be tied to units, or more than one person needs to update it, purpose-built fleet maintenance software is usually worth it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is an FMIS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An FMIS (fleet management information system) is software for running a fleet's maintenance and records: units, meters, PM schedules, work orders, parts, costs and reports, all in one place."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does it take to move from spreadsheets to an FMIS?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends mostly on how clean your data is. Cleaning unit numbers, meters and PM schedules before import is usually the longest step. The import itself is the quick part."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do we have to bring over all our old records?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Bring the history you trust and use, usually the most recent years in full. Older or paper-only records can be scanned and attached, or archived under your city's records retention schedule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's the most common migration mistake?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bad meter readings. If meters are wrong when you import them, every PM due date built on them is wrong too. Check meters unit by unit before the switch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should we delete sold or scrapped units before importing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Mark them disposed with a date. Keeping their history helps with audits, public records requests and replacement analysis."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will city staff have to enter all the data themselves?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not with every vendor. Ask up front who does the loading. Civic Fleet Services' own team loads the data and builds the PM schedules, so city staff don't have to."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://civicfleets.com/#dan",
+   "name": "Dan Yates",
+   "jobTitle": "Founder & Fleet Consultant",
+   "worksFor": {
+    "@id": "https://civicfleets.com/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://civicfleets.com/#org",
+   "name": "Civic Fleet Services",
+   "url": "https://civicfleets.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://civicfleets.com/img/brand/cfs-lockup-dark-1800.png"
+   }
+  }
+ ]
+}
+</script>
+<style>
+:root{--ink:#0d1620;--ink2:#16283a;--amber:#E3CD8C;--brass:#C8AA55;--brass-dark:#7A6420;--red:#e8443a;--sky:#4fb3ff;--paper:#f4f6f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+.w{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:1.1rem 0}
+nav .w{display:flex;justify-content:flex-end;align-items:center}
+nav .nr{display:flex;align-items:center;gap:1rem}nav a.login{color:#ffffffcc;text-decoration:none;font-size:.9rem;padding:.4rem .2rem}nav a.login:hover{color:#fff;text-decoration:underline}
+nav a.mini{color:#fff;text-decoration:none;border:1px solid #ffffff55;padding:.4rem .9rem;border-radius:99px;font-size:.9rem}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,#2b5d8a 0%,transparent 60%),radial-gradient(800px 400px at 0% 110%,#7a2a1f 0%,transparent 60%),linear-gradient(160deg,#0d1620 0%,#132536 55%,#0a121a 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 38px,#ffffff06 38px 40px)}
+.hero .w{position:relative;z-index:2;padding-top:4.5rem;padding-bottom:3.5rem}
+.wm-logo{display:block;width:min(300px,70%);height:auto;margin-left:-1%}
+.kicker{display:inline-block;margin-top:2rem;background:#E3CD8C22;color:var(--amber);border:1px solid #E3CD8C80;padding:.3rem .8rem;border-radius:99px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:1rem 0 .8rem;font-weight:900;letter-spacing:-.02em;max-width:22ch}
+.byline{color:#d5e0ea;margin:0;font-size:.95rem}.byline time{color:#a3b4c4}
+.prose{max-width:72ch;margin:0 auto;padding:3rem 1.25rem 4rem}
+.prose h2{font-size:clamp(1.5rem,3.2vw,2rem);margin:2.6rem 0 .8rem;font-weight:900;letter-spacing:-.01em;line-height:1.2}
+.prose h3{font-size:1.2rem;margin:1.8rem 0 .4rem}
+.prose a{color:var(--brass-dark)}.prose .endcta a.pl-inv{color:var(--amber)}
+.prose li{margin:.35rem 0}
+.prose blockquote{margin:0 0 2rem;padding:1.2rem 1.4rem;background:#fff;border-left:5px solid var(--brass);border-radius:12px;box-shadow:0 2px 0 #0001,0 12px 30px #0d16200f}
+.prose blockquote p{margin:0}
+.endcta{margin-top:3rem;padding:1.6rem;background:var(--ink);color:#fff;border-radius:16px}.endcta b{display:block;font-size:1.3rem}.endcta p{color:#d5e0ea;margin:.3rem 0 0}
+.cta{display:inline-flex;gap:.6rem;align-items:center;background:linear-gradient(90deg,var(--amber),var(--brass));color:#0D1620;font-weight:800;padding:1rem 1.6rem;border-radius:10px;text-decoration:none;box-shadow:0 10px 30px #C8AA5555}
+.ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.2rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
+.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}
+footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-size:.85rem}
+.prose table{border-collapse:collapse;width:100%;font-size:.92rem;background:#fff;margin:1.2rem 0;display:block;overflow-x:auto}.prose th{background:var(--ink2);color:#fff;text-align:left}.prose th,.prose td{padding:.5rem .7rem;border:1px solid #d5e0ea;vertical-align:top}
+.prose .related,.prose .about-author{color:#43515f;font-size:.95rem}
+/* PRELAUNCH: banner + disabled controls. Active only while <html data-prelaunch> is set. */
+.pl-bar{display:none}
+[data-prelaunch] .pl-bar{display:block;position:relative;z-index:30;height:2rem;line-height:2rem;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.06em;background:var(--amber);color:#0D1620}
+[data-prelaunch] nav{top:2rem}nav span.mini{color:#fff}
+[data-prelaunch] .pl-off{opacity:.45;cursor:not-allowed;filter:grayscale(1);box-shadow:none;transform:none!important}
+.pl-inv{color:var(--amber);font-weight:700;font-size:.9rem}.pilot .pl-inv,.about .pl-inv{color:#7A6420}
+
+</style></head><body>
+<div class="pl-bar" role="status">Coming soon</div>
+<nav><div class="w"><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><span class="mini pl-off" aria-disabled="true" title="Available at launch">Contact</span></span></div></nav>
+<header class="hero"><div class="w">
+<a href="/" aria-label="Civic Fleet Services home"><img class="wm-logo" src="/img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></a>
+<span class="kicker">Guide</span>
+<h1>Moving From Spreadsheets to Fleet Maintenance Software: A Guide for Small City Fleets</h1>
+<p class="byline">By Dan Yates, Founder &amp; Fleet Consultant, Civic Fleet Services &middot; <time datetime="2026-10-17">October 17, 2026</time></p>
+</div></header>
+<main><article class="prose">
+<blockquote>
+<p><strong>Short answer:</strong> A small city has outgrown spreadsheets when PMs get missed, nobody can say what a unit cost last year, and the file only works when one person touches it. Move your unit list, meters, PM schedules, open work and as much repair history as you can trust. Clean it first: one unit number per asset, one department name, and real meter readings.</p>
+</blockquote>
+<p>Most small city fleets run on a spreadsheet at some point. Sometimes it's one big workbook, sometimes a dozen files, a whiteboard and a stack of paper work orders. That isn't a failure. A spreadsheet is free, everyone knows how to open it, and it works fine for a while.</p>
+<p>The trouble starts when the fleet, the staff or the questions get bigger than the file. This guide covers how to tell when you've hit that point, what to bring into fleet maintenance software (often called an FMIS, fleet management information system), and how to clean the data so the new system starts out right.</p>
+<h2>How do you know your city has outgrown spreadsheets?</h2>
+<p><strong>You've outgrown spreadsheets when the file can't answer basic questions quickly, or only one person can keep it accurate.</strong> If PMs slip because nobody saw the due date, or council asks what a unit cost and it takes a week to answer, the spreadsheet is costing you more than it saves.</p>
+<p>Here are the signs I'd look for:</p>
+<ul>
+<li><strong>PMs are tracked by memory.</strong> Someone has to remember to check the sheet, and when they're on vacation, oil changes slide.</li>
+<li><strong>Meters are stale.</strong> Odometer and hour readings get updated whenever someone thinks of it, so "due at" columns don't mean much.</li>
+<li><strong>Costs live somewhere else.</strong> Parts are on invoices, labor is on timecards, fuel is on a card statement, and none of it is tied to a unit number.</li>
+<li><strong>Departments call to ask for status.</strong> Police, Parks and Streets want to know when their units will be ready, and the only answer is a phone call to the shop.</li>
+<li><strong>Version fights.</strong> There's "Fleet List FINAL," "Fleet List FINAL v2," and a copy on someone's desktop that's actually the current one.</li>
+<li><strong>Audit or records requests hurt.</strong> Pulling a unit's full service history means digging through folders and file cabinets.</li>
+<li><strong>Replacement decisions are guesses.</strong> You know a truck is a money pit, but you can't show the numbers to council.</li>
+</ul>
+<p>If three or more of those sound familiar, it's time to look at software built for the job.</p>
+<h2>What should you move from spreadsheets into an FMIS?</h2>
+<p><strong>Move the data you actually use to make decisions: units, meters, PM schedules, open work and the repair history you trust.</strong> You don't have to bring every old note. Bring clean, current data, plus enough history to show cost and repair patterns.</p>
+<p>Start with the data that keeps the shop running day to day, then add history:</p>
+<ol>
+<li><strong>Unit list (asset register).</strong> Unit number, year, make, model, VIN or serial, department, location, in-service date, fuel type, and status (active, down, surplus).</li>
+<li><strong>Current meters.</strong> The latest odometer and/or hour reading for every unit, with the date it was read.</li>
+<li><strong>PM schedules.</strong> What service is due, on what interval (miles, hours, date, or whichever comes first), and when each unit was last serviced.</li>
+<li><strong>Open work.</strong> Anything currently in the shop or waiting on parts.</li>
+<li><strong>Repair and PM history.</strong> Past work orders with date, meter, work done, parts and labor, as far back as the records are reliable.</li>
+<li><strong>Parts list.</strong> Common part numbers, descriptions and on-hand quantities, if you stock parts.</li>
+<li><strong>Vendors.</strong> Outside shops, tire vendors, towing and parts suppliers.</li>
+<li><strong>People and departments.</strong> Technicians, supervisors, and the Department Fleet Rep for each department that owns vehicles.</li>
+</ol>
+<h2>How much history should you bring over?</h2>
+<p><strong>Bring as much history as you trust, and stop where the records get unreliable.</strong> Cost and repair trends need history, but bad history gives you bad decisions. For most small cities, the last few years of clean records are worth far more than ten years of guesses.</p>
+<p>A practical approach:</p>
+<ul>
+<li><strong>Recent and complete:</strong> import it fully, with costs, meters and work descriptions.</li>
+<li><strong>Older but usable:</strong> import date, unit, meter and a short description, even without exact costs.</li>
+<li><strong>Spotty or paper-only:</strong> scan it and attach it to the unit as a document, or keep it archived under your records schedule. Don't key it in line by line unless you need it.</li>
+</ul>
+<p>Whatever you decide, write it down. "History before a given date is summary only" is a fine rule, as long as everyone knows it.</p>
+<h2>How do you clean fleet data before migrating?</h2>
+<p><strong>Clean the data in the spreadsheet before it goes in: fix unit numbers, standardize names, correct meters and remove duplicates.</strong> It's much easier to fix a column in Excel than to fix hundreds of records after import.</p>
+<p>Work through it in this order:</p>
+<h3>Fix unit numbers first</h3>
+<p>Every asset needs one unique ID that never changes. Look for the same truck listed as "PW-12," "PW12," and "12." Pick one format and stick to it. If you renumber, keep the old number in a separate column so history still matches up.</p>
+<h3>Standardize departments and categories</h3>
+<p>"Public Works," "PW," "Pub Works" and "Streets" might all mean the same thing, or they might not. Agree on one list of departments and one list of asset classes (light duty, heavy duty, off-road equipment, small engines, trailers), and map every row to it.</p>
+<h3>Check every meter</h3>
+<p>Meters are where most migrations go wrong. Look for:</p>
+<ul>
+<li>Readings that go backward over time</li>
+<li>Hour meters entered in the mileage column</li>
+<li>Replaced odometers or hour meters (note the change and the reading at swap)</li>
+<li>Units with no reading at all</li>
+</ul>
+<p>If a reading looks wrong, go read the unit. PM due dates are only as good as the meter behind them.</p>
+<h3>Decide what counts as a PM</h3>
+<p>Write out each PM type you actually do (A service, B service, annual inspection, aerial inspection, pump test, and so on) with its interval. Use the manufacturer's schedule, your state's rules and your city's policy as the source, not whatever was typed in the sheet years ago.</p>
+<h3>Remove duplicates and dead units</h3>
+<p>Units that were sold, scrapped or transferred should be marked as disposed with a date, not deleted. That keeps their history in the record for audits and records requests.</p>
+<h3>Fill the gaps you can</h3>
+<p>VINs, in-service dates and departments are worth chasing down now. A short list of "unknowns" to finish in the first month is fine, as long as it's short.</p>
+<h2>What does a clean migration checklist look like?</h2>
+<p><strong>A good checklist ties each type of data to who owns it, how to check it, and when it has to be ready.</strong> Use the table below as a starting point and adjust it to your shop.</p>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>What to check before import</th>
+<th>Who usually owns it</th>
+<th>Must have on day one?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unit list</td>
+<td>One unique unit number, VIN/serial, department, status</td>
+<td>Fleet manager</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Meters</td>
+<td>Latest reading and date; no backward readings</td>
+<td>Shop / Department Fleet Reps</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>PM schedules</td>
+<td>Interval type (miles, hours, date) and last-done date per unit</td>
+<td>Fleet manager / lead mechanic</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Open work orders</td>
+<td>Status, parts waiting, assigned tech</td>
+<td>Shop supervisor</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Repair history</td>
+<td>Date, meter, work done, cost where known</td>
+<td>Fleet office</td>
+<td>Recent years, yes; older can follow</td>
+</tr>
+<tr>
+<td>Parts inventory</td>
+<td>Part numbers, descriptions, on-hand counts</td>
+<td>Parts clerk</td>
+<td>If you stock parts</td>
+</tr>
+<tr>
+<td>Vendors</td>
+<td>Names, contacts, what they do</td>
+<td>Fleet office</td>
+<td>Nice to have</td>
+</tr>
+<tr>
+<td>Users and roles</td>
+<td>Techs, supervisors, Department Fleet Reps, read-only finance</td>
+<td>Fleet manager / IT</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2>How do you run the switch without stopping the shop?</h2>
+<p><strong>Pick a cutover date, freeze changes to the spreadsheet, import the cleaned data, and run new work only in the new system from that day on.</strong> Running two systems side by side for long almost always means one of them is wrong.</p>
+<p>A simple plan for a small city:</p>
+<ol>
+<li><strong>Pick a quiet week.</strong> Avoid snow season, budget season and the end of the fiscal year.</li>
+<li><strong>Freeze the spreadsheet.</strong> After the freeze date, no edits. Save a read-only copy and file it under your records schedule.</li>
+<li><strong>Import and spot-check.</strong> Pick ten units across departments and compare every field to the source.</li>
+<li><strong>Confirm PMs.</strong> Make sure the units due next week actually show as due.</li>
+<li><strong>Train by role.</strong> Mechanics need to open and close work orders on a phone or shop computer. Department Fleet Reps need to see status and submit requests. Finance needs read-only cost reports.</li>
+<li><strong>Go.</strong> All new work goes in the new system. Keep a short list of issues and fix them weekly for the first month.</li>
+</ol>
+<h2>What should a small city look for in fleet maintenance software?</h2>
+<p><strong>Look for software that fits a mixed municipal fleet, makes PMs hard to miss, and lets you get your data back out.</strong> Commercial fleet tools are often built around trucking and delivery. A city fleet has patrol units, plows, mowers and loaders, plus departments that want to know where their stuff is.</p>
+<p>Questions worth asking any vendor:</p>
+<ul>
+<li>Can it schedule PMs by miles, hours and date, whichever comes first?</li>
+<li>Does it handle off-road equipment and small engines, not just road vehicles?</li>
+<li>Can Department Fleet Reps see their own units' status without calling the shop?</li>
+<li>Does it keep an audit trail of who changed what, and when?</li>
+<li>Can it report cost per unit and cost by department for chargebacks and council?</li>
+<li>Can the city export all of its data in a standard format at any time?</li>
+<li>Who does the data loading: city staff, or the vendor?</li>
+</ul>
+<p>That last question matters more than people think. Most city fleet teams are already stretched. Software that needs months of staff time to set up often never gets fully used. At Civic Fleet Services, our team does that work for the city: loading the unit list, bringing in history, building the PM schedules and training your staff, so they aren't stuck keying data.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<h3>Is Excel good enough for a small city fleet?</h3>
+<p>For a very small fleet with one person who keeps it current, it can work. Once PMs are being missed, costs can't be tied to units, or more than one person needs to update it, purpose-built fleet maintenance software is usually worth it.</p>
+<h3>What is an FMIS?</h3>
+<p>An FMIS (fleet management information system) is software for running a fleet's maintenance and records: units, meters, PM schedules, work orders, parts, costs and reports, all in one place.</p>
+<h3>How long does it take to move from spreadsheets to an FMIS?</h3>
+<p>It depends mostly on how clean your data is. Cleaning unit numbers, meters and PM schedules before import is usually the longest step. The import itself is the quick part.</p>
+<h3>Do we have to bring over all our old records?</h3>
+<p>No. Bring the history you trust and use, usually the most recent years in full. Older or paper-only records can be scanned and attached, or archived under your city's records retention schedule.</p>
+<h3>What's the most common migration mistake?</h3>
+<p>Bad meter readings. If meters are wrong when you import them, every PM due date built on them is wrong too. Check meters unit by unit before the switch.</p>
+<h3>Should we delete sold or scrapped units before importing?</h3>
+<p>No. Mark them disposed with a date. Keeping their history helps with audits, public records requests and replacement analysis.</p>
+<h3>Will city staff have to enter all the data themselves?</h3>
+<p>Not with every vendor. Ask up front who does the loading. Civic Fleet Services' own team loads the data and builds the PM schedules, so city staff don't have to.</p>
+<hr />
+<p class="related"><em>Related reading:</em> <a href="/what-is-fleet-management/">What Is Fleet Management? A Guide for City and Public Works Fleets</a> · <a href="/blog/pm-compliance-municipal-fleets/">Preventive Maintenance Compliance for Municipal Fleets</a> · <a href="/blog/cost-per-unit-city-fleets/">Cost Per Unit for City Fleets</a></p>
+<p class="about-author"><em>Dan Yates is Founder &amp; Fleet Consultant at Civic Fleet Services.</em> <a href="/#contact">About Dan Yates</a></p>
+
+<aside class="endcta"><b>Civic Fleet Services FMIS</b><p>Fleet maintenance software for city and public fleets.</p>
+<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
+</aside>
+</article></main>
+<footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>

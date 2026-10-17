@@ -1,0 +1,357 @@
+<!doctype html><html lang="en" data-prelaunch><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0D1620"><link rel="canonical" href="https://civicfleets.com/blog/cost-per-unit-city-fleets/">
+<title>Cost Per Unit for City Fleets: How to Calculate It and Use It With Council | Civic Fleet Services</title>
+<meta name="description" content="Cost per unit for city fleets: the formula, a worked example with sample numbers, department chargebacks, and how to use it for council replacement decisions.">
+<meta name="author" content="Dan Yates">
+<meta property="og:title" content="Cost Per Unit for City Fleets: How to Calculate It and Use It With Council">
+<meta property="og:description" content="Cost per unit for city fleets: the formula, a worked example with sample numbers, department chargebacks, and how to use it for council replacement decisions.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://civicfleets.com/blog/cost-per-unit-city-fleets/">
+<meta property="og:site_name" content="Civic Fleet Services">
+<meta property="og:image" content="https://civicfleets.com/img/brand/share-1200x630.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Civic Fleet Services logo">
+<meta property="article:published_time" content="2026-10-17"><meta property="article:modified_time" content="2026-10-17">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://civicfleets.com/img/brand/share-1200x630.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "headline": "Cost Per Unit for City Fleets: How to Calculate It and Use It With Council",
+   "description": "Cost per unit for city fleets: the formula, a worked example with sample numbers, department chargebacks, and how to use it for council replacement decisions.",
+   "image": "https://civicfleets.com/img/brand/share-1200x630.png",
+   "datePublished": "2026-10-17",
+   "dateModified": "2026-10-17",
+   "author": {
+    "@id": "https://civicfleets.com/#dan"
+   },
+   "publisher": {
+    "@id": "https://civicfleets.com/#org"
+   },
+   "mainEntityOfPage": "https://civicfleets.com/blog/cost-per-unit-city-fleets/"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What's the difference between cost per unit and cost per mile?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cost per unit is the total cost for one asset over a period. Cost per mile (or per hour) divides that total by use, so you can compare units that work different amounts."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should depreciation be included?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "For replacement decisions and full chargebacks, include an ownership cost: depreciation or the annual replacement fund contribution, whichever your finance department uses. For comparing shop performance, operating costs alone may be enough."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is cost per mile or cost per hour better?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Use miles for road vehicles and engine hours for equipment, and consider hours for patrol units that idle a lot."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many years of data does council need to see?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Enough to show a trend. Several years of cost and downtime history usually tells the story better than one bad year."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a fleet chargeback?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A way of billing departments for the fleet costs their vehicles create, by actual cost, a set rate, or a mix of both."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where do I start if my costs aren't tied to units today?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Start with work orders. Get every labor hour and part tied to a unit number, then add outside invoices and fuel."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://civicfleets.com/#dan",
+   "name": "Dan Yates",
+   "jobTitle": "Founder & Fleet Consultant",
+   "worksFor": {
+    "@id": "https://civicfleets.com/#org"
+   }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://civicfleets.com/#org",
+   "name": "Civic Fleet Services",
+   "url": "https://civicfleets.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://civicfleets.com/img/brand/cfs-lockup-dark-1800.png"
+   }
+  }
+ ]
+}
+</script>
+<style>
+:root{--ink:#0d1620;--ink2:#16283a;--amber:#E3CD8C;--brass:#C8AA55;--brass-dark:#7A6420;--red:#e8443a;--sky:#4fb3ff;--paper:#f4f6f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+.w{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:1.1rem 0}
+nav .w{display:flex;justify-content:flex-end;align-items:center}
+nav .nr{display:flex;align-items:center;gap:1rem}nav a.login{color:#ffffffcc;text-decoration:none;font-size:.9rem;padding:.4rem .2rem}nav a.login:hover{color:#fff;text-decoration:underline}
+nav a.mini{color:#fff;text-decoration:none;border:1px solid #ffffff55;padding:.4rem .9rem;border-radius:99px;font-size:.9rem}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,#2b5d8a 0%,transparent 60%),radial-gradient(800px 400px at 0% 110%,#7a2a1f 0%,transparent 60%),linear-gradient(160deg,#0d1620 0%,#132536 55%,#0a121a 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 38px,#ffffff06 38px 40px)}
+.hero .w{position:relative;z-index:2;padding-top:4.5rem;padding-bottom:3.5rem}
+.wm-logo{display:block;width:min(300px,70%);height:auto;margin-left:-1%}
+.kicker{display:inline-block;margin-top:2rem;background:#E3CD8C22;color:var(--amber);border:1px solid #E3CD8C80;padding:.3rem .8rem;border-radius:99px;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;margin:1rem 0 .8rem;font-weight:900;letter-spacing:-.02em;max-width:22ch}
+.byline{color:#d5e0ea;margin:0;font-size:.95rem}.byline time{color:#a3b4c4}
+.prose{max-width:72ch;margin:0 auto;padding:3rem 1.25rem 4rem}
+.prose h2{font-size:clamp(1.5rem,3.2vw,2rem);margin:2.6rem 0 .8rem;font-weight:900;letter-spacing:-.01em;line-height:1.2}
+.prose h3{font-size:1.2rem;margin:1.8rem 0 .4rem}
+.prose a{color:var(--brass-dark)}.prose .endcta a.pl-inv{color:var(--amber)}
+.prose li{margin:.35rem 0}
+.prose blockquote{margin:0 0 2rem;padding:1.2rem 1.4rem;background:#fff;border-left:5px solid var(--brass);border-radius:12px;box-shadow:0 2px 0 #0001,0 12px 30px #0d16200f}
+.prose blockquote p{margin:0}
+.endcta{margin-top:3rem;padding:1.6rem;background:var(--ink);color:#fff;border-radius:16px}.endcta b{display:block;font-size:1.3rem}.endcta p{color:#d5e0ea;margin:.3rem 0 0}
+.cta{display:inline-flex;gap:.6rem;align-items:center;background:linear-gradient(90deg,var(--amber),var(--brass));color:#0D1620;font-weight:800;padding:1rem 1.6rem;border-radius:10px;text-decoration:none;box-shadow:0 10px 30px #C8AA5555}
+.ctas{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.2rem}.ctas .cta{margin:0;border:0;font:inherit;font-weight:800;cursor:pointer}
+.start{display:inline-flex;flex-direction:column;align-items:flex-start}.start small{color:#a3b4c4;font-size:.78rem;margin-top:.2rem}
+footer{background:#070d13;color:#a3b4c4;text-align:center;padding:1.4rem;font-size:.85rem}
+.prose table{border-collapse:collapse;width:100%;font-size:.92rem;background:#fff;margin:1.2rem 0;display:block;overflow-x:auto}.prose th{background:var(--ink2);color:#fff;text-align:left}.prose th,.prose td{padding:.5rem .7rem;border:1px solid #d5e0ea;vertical-align:top}
+.prose .related,.prose .about-author{color:#43515f;font-size:.95rem}
+/* PRELAUNCH: banner + disabled controls. Active only while <html data-prelaunch> is set. */
+.pl-bar{display:none}
+[data-prelaunch] .pl-bar{display:block;position:relative;z-index:30;height:2rem;line-height:2rem;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.06em;background:var(--amber);color:#0D1620}
+[data-prelaunch] nav{top:2rem}nav span.mini{color:#fff}
+[data-prelaunch] .pl-off{opacity:.45;cursor:not-allowed;filter:grayscale(1);box-shadow:none;transform:none!important}
+.pl-inv{color:var(--amber);font-weight:700;font-size:.9rem}.pilot .pl-inv,.about .pl-inv{color:#7A6420}
+
+</style></head><body>
+<div class="pl-bar" role="status">Coming soon</div>
+<nav><div class="w"><span class="nr"><a class="login" href="https://app.civicfleets.com/login">Log in</a><span class="mini pl-off" aria-disabled="true" title="Available at launch">Contact</span></span></div></nav>
+<header class="hero"><div class="w">
+<a href="/" aria-label="Civic Fleet Services home"><img class="wm-logo" src="/img/brand/cfs-lockup-dark-1800.png" width="1800" height="520" alt="Civic Fleet Services"></a>
+<span class="kicker">Guide</span>
+<h1>Cost Per Unit for City Fleets: How to Calculate It and Use It With Council</h1>
+<p class="byline">By Dan Yates, Founder &amp; Fleet Consultant, Civic Fleet Services &middot; <time datetime="2026-10-17">October 17, 2026</time></p>
+</div></header>
+<main><article class="prose">
+<blockquote>
+<p><strong>Short answer:</strong> Cost per unit is the total cost of owning and running one vehicle or piece of equipment over a period, usually a year. Add up maintenance labor, parts, outside repairs, fuel and a share of ownership cost, then divide by miles or hours to compare units. It drives fair chargebacks and backs up replacement requests to council.</p>
+</blockquote>
+<p>Ask a city fleet manager which units cost the most and you'll usually get a good answer from gut feel. Ask them to prove it to council and things get harder. Cost per unit is how you turn that gut feel into a number everyone can see.</p>
+<p>This guide walks through what goes into cost per unit, a simple formula, a worked example with sample numbers, how it supports department chargebacks, and how to use it when a unit is up for replacement.</p>
+<h2>What is cost per unit in a city fleet?</h2>
+<p><strong>Cost per unit is everything it takes to own and operate one asset over a set period.</strong> It's usually shown as a yearly total and as a rate per mile or per engine hour, so units with different use can be compared fairly.</p>
+<p>It answers questions council and department heads actually ask:</p>
+<ul>
+<li>Which units cost the most to keep on the road?</li>
+<li>Is this unit cheaper to keep or to replace?</li>
+<li>What should each department pay for the vehicles it uses?</li>
+</ul>
+<h2>What costs go into cost per unit?</h2>
+<p><strong>Include direct operating costs (labor, parts, outside repairs, fuel) and, for a full picture, ownership costs like depreciation or replacement fund contributions.</strong> Leave out costs that don't belong to the unit, or spread them by a clear rule.</p>
+<table>
+<thead>
+<tr>
+<th>Cost category</th>
+<th>What it includes</th>
+<th>Where the data usually comes from</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In-house labor</td>
+<td>Technician hours on the unit × shop labor rate</td>
+<td>Work orders</td>
+<td>Use a fully loaded rate if your city sets one</td>
+</tr>
+<tr>
+<td>Parts and fluids</td>
+<td>Parts, oil, filters, tires</td>
+<td>Work orders, parts issues</td>
+<td>Tie every part to a unit number</td>
+</tr>
+<tr>
+<td>Outside repairs</td>
+<td>Vendor invoices, towing, body work</td>
+<td>Accounts payable</td>
+<td>Code each invoice to a unit</td>
+</tr>
+<tr>
+<td>Fuel</td>
+<td>Gallons or kWh × cost</td>
+<td>Fuel card or fuel system</td>
+<td>Make sure unit numbers match</td>
+</tr>
+<tr>
+<td>Ownership</td>
+<td>Depreciation or annual replacement fund contribution</td>
+<td>Finance</td>
+<td>Ask finance which method the city uses</td>
+</tr>
+<tr>
+<td>Registration and fees</td>
+<td>Registration, title and permit fees</td>
+<td>Finance</td>
+<td>Some cities hold these centrally</td>
+</tr>
+<tr>
+<td>Overhead share</td>
+<td>Shop building, tools, admin</td>
+<td>Fleet budget</td>
+<td>Spread by a clear, written rule</td>
+</tr>
+<tr>
+<td>Downtime (optional)</td>
+<td>Rental or loaner cost while down</td>
+<td>Work orders, invoices</td>
+<td>Shows the hidden cost of unreliable units</td>
+</tr>
+</tbody>
+</table>
+<p>You don't need every row on day one. Start with labor, parts, outside repairs and fuel. Those are the costs you control and the ones that move most between units.</p>
+<h2>How do you calculate cost per unit?</h2>
+<p><strong>Add the costs for the period, then divide by miles or engine hours to get a rate.</strong> The yearly total shows what the unit costs. The rate lets you compare a busy unit to a lightly used one.</p>
+<p>The formulas:</p>
+<ul>
+<li><strong>Annual cost per unit</strong> = labor + parts + outside repairs + fuel + ownership + other assigned costs</li>
+<li><strong>Cost per mile</strong> = annual cost per unit ÷ miles driven that year</li>
+<li><strong>Cost per hour</strong> = annual cost per unit ÷ engine hours that year (for equipment and patrol units)</li>
+</ul>
+<p>Pick miles or hours based on how the unit wears, the same way you set PM triggers.</p>
+<h2>What does a worked example look like?</h2>
+<p><strong>Here's a sample calculation using made-up example numbers, not real data from any city.</strong> Use it to see how the math works, then plug in your own.</p>
+<p><em>Example numbers only.</em> Two pickups in the same class, one year:</p>
+<table>
+<thead>
+<tr>
+<th>Item (example)</th>
+<th>Pickup A</th>
+<th>Pickup B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In-house labor (hours × shop rate)</td>
+<td>20 hrs × 90 = 1,800</td>
+<td>62 hrs × 90 = 5,580</td>
+</tr>
+<tr>
+<td>Parts and fluids</td>
+<td>1,200</td>
+<td>3,900</td>
+</tr>
+<tr>
+<td>Outside repairs</td>
+<td>0</td>
+<td>2,400</td>
+</tr>
+<tr>
+<td>Fuel</td>
+<td>3,100</td>
+<td>3,300</td>
+</tr>
+<tr>
+<td>Ownership (annual replacement fund)</td>
+<td>4,000</td>
+<td>4,000</td>
+</tr>
+<tr>
+<td><strong>Annual cost (example dollars)</strong></td>
+<td><strong>10,100</strong></td>
+<td><strong>19,180</strong></td>
+</tr>
+<tr>
+<td>Miles driven</td>
+<td>12,000</td>
+<td>11,000</td>
+</tr>
+<tr>
+<td><strong>Cost per mile (example dollars)</strong></td>
+<td><strong>0.84</strong></td>
+<td><strong>1.74</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Same class, similar miles, but Pickup B costs about twice as much per mile in this example. That's the kind of gap that's easy to feel and hard to show without the numbers. If Pickup B is also the older unit with rising repair costs year over year, it belongs on the replacement list.</p>
+<h2>How does cost per unit support chargebacks?</h2>
+<p><strong>Chargebacks bill departments for the fleet costs their units create, and cost per unit is the basis for a fair bill.</strong> When departments see what their vehicles cost, they make better choices about how many they keep.</p>
+<p>Common chargeback approaches:</p>
+<ul>
+<li><strong>Actual cost.</strong> Each department pays the actual labor, parts, outside repairs and fuel for its units, plus an overhead share.</li>
+<li><strong>Rate-based.</strong> Departments pay a set rate per mile, hour or month by vehicle class, set from past cost per unit data and adjusted each budget year.</li>
+<li><strong>Hybrid.</strong> A monthly rate for ownership and overhead, plus actual repair and fuel costs.</li>
+</ul>
+<p>Whichever you use, write down the rules: what's included, how overhead is spread, and how damage or misuse repairs are billed. Your finance department will likely have a say, especially if fleet runs as an internal service fund.</p>
+<h2>How do you use cost per unit for council replacement decisions?</h2>
+<p><strong>Show council the unit's cost trend over several years next to what a replacement would cost to own and run.</strong> A rising cost per mile, more downtime and repeat repairs make a stronger case than age or mileage alone.</p>
+<p>A replacement request that tends to hold up includes:</p>
+<ol>
+<li><strong>Cost history.</strong> Annual cost and cost per mile or hour for the last several years.</li>
+<li><strong>Downtime.</strong> Days out of service and the effect on the department's work.</li>
+<li><strong>Major repairs ahead.</strong> Known upcoming work, like an engine, transmission or hydraulic overhaul.</li>
+<li><strong>Utilization.</strong> Whether the unit is still needed, or could be reassigned or eliminated.</li>
+<li><strong>Replacement estimate.</strong> Expected ownership and operating cost of the new unit, from quotes or past purchases.</li>
+<li><strong>Recommendation.</strong> Replace, repair, reassign or dispose, with a target budget year.</li>
+</ol>
+<p>Many cities score units on age, miles or hours, cost and condition so the replacement list is ranked the same way every year. A consistent scoring method takes the politics out of who gets new trucks.</p>
+<h2>What gets in the way of accurate cost per unit?</h2>
+<p><strong>Most cost per unit problems come from costs that aren't tied to a unit number.</strong> If a part, invoice or fuel transaction can't be traced to a specific unit, it falls into a general bucket and the numbers stop meaning much.</p>
+<p>Common problems and fixes:</p>
+<ul>
+<li><strong>Parts pulled without a work order.</strong> Require a unit or work order for every part issued.</li>
+<li><strong>Vendor invoices coded to a department, not a unit.</strong> Add the unit number to purchase orders.</li>
+<li><strong>Fuel cards shared across units.</strong> Assign cards to units, or require a unit number at the pump.</li>
+<li><strong>Missing labor time.</strong> Have technicians clock time to work orders, not just to the shift.</li>
+<li><strong>Bad meters.</strong> Wrong miles or hours make every per-mile number wrong.</li>
+</ul>
+<p>Fleet maintenance software helps here by tying labor, parts, outside work and meters to the unit on each work order, so the cost report builds itself instead of being pieced together at budget time.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<h3>What's the difference between cost per unit and cost per mile?</h3>
+<p>Cost per unit is the total cost for one asset over a period. Cost per mile (or per hour) divides that total by use, so you can compare units that work different amounts.</p>
+<h3>Should depreciation be included?</h3>
+<p>For replacement decisions and full chargebacks, include an ownership cost: depreciation or the annual replacement fund contribution, whichever your finance department uses. For comparing shop performance, operating costs alone may be enough.</p>
+<h3>Is cost per mile or cost per hour better?</h3>
+<p>Use miles for road vehicles and engine hours for equipment, and consider hours for patrol units that idle a lot.</p>
+<h3>How many years of data does council need to see?</h3>
+<p>Enough to show a trend. Several years of cost and downtime history usually tells the story better than one bad year.</p>
+<h3>What is a fleet chargeback?</h3>
+<p>A way of billing departments for the fleet costs their vehicles create, by actual cost, a set rate, or a mix of both.</p>
+<h3>Where do I start if my costs aren't tied to units today?</h3>
+<p>Start with work orders. Get every labor hour and part tied to a unit number, then add outside invoices and fuel.</p>
+<hr />
+<p class="related"><em>Related reading:</em> <a href="/what-is-fleet-management/">What Is Fleet Management? A Guide for City and Public Works Fleets</a> · <a href="/blog/spreadsheets-to-fleet-maintenance-software/">Moving From Spreadsheets to Fleet Maintenance Software</a> · <a href="/blog/pm-compliance-municipal-fleets/">Preventive Maintenance Compliance for Municipal Fleets</a></p>
+<p class="about-author"><em>Dan Yates is Founder &amp; Fleet Consultant at Civic Fleet Services.</em> <a href="/#contact">About Dan Yates</a></p>
+
+<aside class="endcta"><b>Civic Fleet Services FMIS</b><p>Fleet maintenance software for city and public fleets.</p>
+<div class="ctas"><span class="start"><button type="button" class="cta pl-off" aria-disabled="true" title="Available at launch">Start 7-Day Trial</button><small>Available at launch</small></span><a class="pl-inv" href="https://app.civicfleets.com/signup">Have an invite code? &rarr;</a></div>
+</aside>
+</article></main>
+<footer>&copy; <span id="y"></span> <span data-name>Civic Fleet Services</span> &middot; Utah &middot; <a href="https://app.civicfleets.com/login" style="color:#a3b4c4">Log in</a></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body></html>
